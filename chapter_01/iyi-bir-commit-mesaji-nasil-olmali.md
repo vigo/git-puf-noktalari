@@ -52,5 +52,4 @@ olmazlar. `git commit` dedikten sonra, gelen ekranda hiçbir şey yazmadan
 
     Aborting commit due to empty commit message.
 
-mesajını alırsınız. Yani **boş mesaj** olamaz!
-
+mesajını alırsınız. Yani **boş mesaj** olamaz! (*Bazı özel durumlar dışında...*)

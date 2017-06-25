@@ -16,5 +16,7 @@ Bu bölümde işleyeceğimiz konular:
 * [İlk Commit](ilk-commit.md)
 * [Commit mesajı nedir?](commit-mesaji-nedir.md)
 * [İyi Bir Commit Mesajı Nasıl Olmalı?](iyi-bir-commit-mesaji-nasil-olmali.md)
+* [Basit Kullanım Örneği](basit-kullanim-ornegi.md)
+* [İnteraktif ekleme: `git add -i`](interaktif-git-add.md)
+* [Patch mod’da ekleme: `git add -p`](patch-mod-git-add.md)
 * [Bazı Dosyaları Takip Etmemek: `.gitignore`](bazi-dosyalari-takip-etmemek-gitignore.md)
-

@@ -16,4 +16,7 @@
    * [İlk Commit](chapter_01/ilk-commit.md)
    * [Commit mesajı nedir?](chapter_01/commit-mesaji-nedir.md)
    * [İyi Bir Commit Mesajı Nasıl Olmalı?](chapter_01/iyi-bir-commit-mesaji-nasil-olmali.md)
+   * [Basit Kullanım Örneği](chapter_01/basit-kullanim-ornegi.md)
+   * [İnteraktif ekleme: `git add -i`](chapter_01/interaktif-git-add.md)
+   * [Patch mod’da ekleme: `git add -p`](chapter_01/patch-mod-git-add.md)
    * [Bazı Dosyaları Takip Etmemek: `.gitignore`](chapter_01/bazi-dosyalari-takip-etmemek-gitignore.md)
