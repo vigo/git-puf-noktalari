@@ -1,4 +1,4 @@
-# İnteraktif ekleme: `git add -i`
+# İnteraktif Ekleme: `git add -i`
 
 Eğer `git add -i` derseniz, **Interactive Mode**’a geçersiniz. Bu durumda
 karşınıza çeşitli seçenekler çıkar:

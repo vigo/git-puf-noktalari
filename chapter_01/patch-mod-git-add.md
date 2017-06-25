@@ -1,4 +1,4 @@
-# Patch mod’da ekleme: `git add -p`
+# Patch Mode’da Ekleme: `git add -p`
 
 Belkide GIT’in yapılma sebeplerinden biri **Patching**. Linus Torvalds, Linux
 kernel’i geliştiriken, diğer katkı yapan developerlar, yaptıklarını e-posta ile 
