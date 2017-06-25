@@ -19,4 +19,5 @@ Bu bölümde işleyeceğimiz konular:
 * [Basit Kullanım Örneği](basit-kullanim-ornegi.md)
 * [İnteraktif ekleme: `git add -i`](interaktif-git-add.md)
 * [Patch mod’da ekleme: `git add -p`](patch-mod-git-add.md)
+* [Log’a bakış](git-log.md)
 * [Bazı Dosyaları Takip Etmemek: `.gitignore`](bazi-dosyalari-takip-etmemek-gitignore.md)

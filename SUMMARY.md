@@ -19,4 +19,5 @@
    * [Basit Kullanım Örneği](chapter_01/basit-kullanim-ornegi.md)
    * [İnteraktif ekleme: `git add -i`](chapter_01/interaktif-git-add.md)
    * [Patch mod’da ekleme: `git add -p`](chapter_01/patch-mod-git-add.md)
+   * [Log’a bakış](chapter_01/git-log.md)
    * [Bazı Dosyaları Takip Etmemek: `.gitignore`](chapter_01/bazi-dosyalari-takip-etmemek-gitignore.md)
