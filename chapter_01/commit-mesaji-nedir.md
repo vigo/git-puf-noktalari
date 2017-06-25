@@ -49,5 +49,5 @@ yapmak, `git commit -m 'MESAJ'` kullanmamak!
 Bu yöntemle karşımıza `git config core.editor` ile belirlenmiş text editörü
 çıkar ve ferah fezah mesaj yazacak bir alanla karşı karşıya kalırız. Böyle bir 
 durumda otomatikleştirilmiş 
-[şablon mesaj](chapter_01/temel-konfigurasyon-ogeleri.md#commit-template) çok işimize 
+[şablon mesaj](temel-konfigurasyon-ogeleri.md#commit-template) çok işimize 
 yarayabilir.
