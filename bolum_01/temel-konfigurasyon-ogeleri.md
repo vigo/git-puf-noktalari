@@ -72,7 +72,7 @@ geldiyse ayar doğru yapılmış demektir.
 
 ## `commit.template` {#commit-template}
 
-İlerleyen bölümlerde; [Commit nedir? Commit Mesajı nedir?](chapter_01/06.md)
+İlerleyen bölümlerde; [Commit nedir? Commit Mesajı nedir?](bolum_01/06.md)
 konusunda çok işimize yarayacak bir ayar özelliğidir. Commit mesajı yazarken
 bize hazır şablon çıkmasını sağlarız bu özellikle.
 

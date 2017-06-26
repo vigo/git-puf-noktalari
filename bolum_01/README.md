@@ -23,3 +23,4 @@ Bu bölümde işleyeceğimiz konular:
 * [Repo’nun Durumu: `git status`](reponun-durumu-git-status.md)
 * [Log’a Bakış](git-log.md)
 * [Bazı Dosyaları Takip Etmemek: `.gitignore`](bazi-dosyalari-takip-etmemek-gitignore.md)
+* [Dosya Silmek, Değiştirmek](dosya-silmek-degistirmek.md)
