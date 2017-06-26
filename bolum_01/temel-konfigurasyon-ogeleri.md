@@ -1,6 +1,6 @@
 # Temel Konfigürasyon Öğeleri
 
-## `core.editor`
+## `core.editor` {#core-editor}
 
 `git commit`, `git merge` gibi durumlarda mesaj yazacağınız editörü ayarlamak için
 kullanılır. Default olarak GIT, environment’ınızdaki `$VISUAL` ya da `$EDITOR`

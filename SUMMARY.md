@@ -24,3 +24,6 @@
    * [Log’a Bakış](bolum_01/git-log.md)
    * [Bazı Dosyaları Takip Etmemek: `.gitignore`](bolum_01/bazi-dosyalari-takip-etmemek-gitignore.md)
    * [Dosya Silmek, Değiştirmek](bolum_01/dosya-silmek-degistirmek.md)
+* [Bölüm 02](bolum_02/README.md)
+   * [Branch’lerle Çalışmak](bolum_02/branch-ler-ile-calismak.md)
+   * [Branch’leri Birleştirmek](bolum_02/branch-leri-birlestirmek.md)
