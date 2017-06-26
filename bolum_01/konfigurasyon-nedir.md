@@ -11,7 +11,7 @@ kelimesi kullanılır.
 1. **System**: Bilgisayardaki tüm kullanıcıları etkileyen en üst seviyedeki 
 konfigürasyondur. Değer atarken `--system` anahtar kelimesi kullanılır.
 
-Konfigürasyon ayarlarını yapmak için; `git config` komutunu kullanırız. İlk git
+Konfigürasyon ayarlarını yapmak için; `git config` komutunu kullanırız. İlk GIT
 kurulumunda olmazsa olmaz olan iki tane konfigürasyon öğesi bulunur:
 
 1. `user.name`

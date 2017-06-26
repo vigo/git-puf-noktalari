@@ -33,11 +33,11 @@ zorunda değilsiniz:
     # Uğur Özyılmazel
 
 Ben Homebrew’la beraber `bash-completion` paketini de kullandığım için, pek
-çok git işlemini **auto-complete** ya da **tab-completion** ya da otomatik
+çok GIT işlemini **auto-complete** ya da **tab-completion** ya da otomatik
 olarak `TAB` tuşuna basınca tamamlama ile kullanıyorum. İşlerim süper
 kolaylaşıyor ve daha az şey ezberlemek durumunda kalıyorum.
 
-Linux türevleri genelde git paketini kurunca otomatik olarak bu tamamlamayı da
+Linux türevleri genelde GIT paketini kurunca otomatik olarak bu tamamlamayı da
 beraberinde getiriyor.
 
 ### Değeri Silmek: `--unset`
@@ -56,7 +56,7 @@ yapmak yeterli.
 
 ### `include` ve `includeIf`
 
-Yanılmıyorsam git versiyon 2.10+ ile gelen, benim çok sevdiğim hayatımı
+Yanılmıyorsam GIT versiyon 2.10+ ile gelen, benim çok sevdiğim hayatımı
 kolaylaştıran 2 direktif. Benim gibi evde kişisel bilgisayar, işte ofis
 bilgisayarı kullanıyorsanız aslında 2 farklı insan gibisiniz.
 
@@ -71,7 +71,7 @@ göre ayar yapmak istiyordum. İşte bu durumda imdadıma `include` yetişti.
     [include]
         path = ~/.gitlocalconfig
 
-`~/.gitlocalconfig` bu dosya her iki bilgisayarımda da bulunuyor. Ana git
+`~/.gitlocalconfig` bu dosya her iki bilgisayarımda da bulunuyor. Ana GIT
 konfigürasyon dosyamda `user` grubunda `name` ve `email` ayarları var. Farklı
 bilgisayarlarda farklı gpg anahtarları kullandığım için (*bunun ne olduğunu
 ileride anlatcağım*) `ùser.signingkey` değeri her makine için farklı :)

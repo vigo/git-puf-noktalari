@@ -3,7 +3,7 @@
 ## `core.editor`
 
 `git commit`, `git merge` gibi durumlarda mesaj yazacağınız editörü ayarlamak için
-kullanılır. Default olarak git, environment’ınızdaki `$VISUAL` ya da `$EDITOR`
+kullanılır. Default olarak GIT, environment’ınızdaki `$VISUAL` ya da `$EDITOR`
 değişkenlerine bakar.
 
 Örneğin, editor olarak **emacs** kullanacaksanız ve;
@@ -19,7 +19,7 @@ Environment bazlı `$EDITOR` değişkeni örnekleri:
     export $EDITOR="atom --wait"    # Atom
     export $EDITOR="subl -n -w"     # Sublime Text
 
-Eğer environment’dan ayar yapmadıysanız, git üzerinden de bu ayarlamayı
+Eğer environment’dan ayar yapmadıysanız, GIT üzerinden de bu ayarlamayı
 yapabilirsiniz. Aşağıda çeşitli editör ayar örnekleri var. Hangi editörü
 kullanacaksanız ilgili satırı uygulayabilirsiniz.
 
@@ -43,7 +43,7 @@ branch, diff, status aşağıdaki gibi ayarlanabilir.
     git config --global color.diff auto
     git config --global color.branch auto
 
-Bu, git’in sizin ortamınıza göre, kullandığınız Terminal’e göre renk
+Bu, GIT’in sizin ortamınıza göre, kullandığınız Terminal’e göre renk
 ayarlaması yapması anlamındadır. İsteğe göre renk değerleri vermek mümkün.
 Hemen `~/.gitconfig` dosyanızı açıp:
 

@@ -6,7 +6,7 @@ topluluğu ile BitKeeper arasında bir sıkıntı oluyor. BitKeeper’ın ücret
 kullanım lisansı iptal oluyor ve [Linus’un sigorta bu noktada atıyor][2].
 
 İzlediğim [Git Under the Hood][3] eğitiminde Jeffrey Haemer, Linus’un GIT’i
-geliştirmeye bir pazartesi başlayıp, çarşamba gününden itibaren git’i git ile
+geliştirmeye bir pazartesi başlayıp, çarşamba gününden itibaren GIT’i GIT ile
 versiyonlamaya başladığını söyledi. Bu kadar hızlı geliştirmesinin sebebi olarak da
 zaten çok iyi bildiği kernel’i kopyalaması olduğunu söyledi.
 
@@ -15,7 +15,7 @@ Unix’i örnek aldığını söyledi...
 
 ### Sonuç Olarak...
 
-Neticede git aslında bir **veritabanı**dır. Tanımlandığı dizin altında
+Neticede GIT aslında bir **veritabanı**dır. Tanımlandığı dizin altında
 çalışan, ilgili bilgilerini, ayarlarını ve benzeri bilgilerini `.git/` dizini
 altında tutan, o dizindeki tüm dosyaların (*eğer izole edilmemişse*)
 versiyonlarını yani dosyalardaki değişikliklerin tarihçesini, bu kendi şahsına

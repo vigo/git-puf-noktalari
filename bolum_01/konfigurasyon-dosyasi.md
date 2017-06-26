@@ -53,7 +53,7 @@ dosyadır. Bu kapsamda ayar yapmak için; **sudo** yetkisi gerekir ve;
     git config --system color.ui true
 
 gibi işlem yapılır ve tüm kullanıcıların ortak kullanabilecekleri şeyleri
-ayarlamak mantklıdır. Eğer benim [macOS][1] kullanıyorsanız ve git’i [Homebrew][2]’dan
+ayarlamak mantklıdır. Eğer benim [macOS][1] kullanıyorsanız ve GIT’i [Homebrew][2]’dan
 kurduysanız, bu dosyanın bulunduğu yer: `/usr/local/etc/gitconfig`’dir.
 
 [1]: https://www.apple.com/macos/

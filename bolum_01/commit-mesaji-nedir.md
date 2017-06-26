@@ -6,8 +6,8 @@ ile ilgili kısımda;
 > ... with a log message from the user describing the changes.
 
 der. Yani kullanıcının yaptığı değişiklikleri tarif ettiği, anlattığı kayıttır
-bu aslında. Çünkü git değişiklikleri takip eden bir araçtır. Teknik olarak
-git deşikliğin ne olduğunu biliyor ama sonuç olarak kodu yazan insan
+bu aslında. Çünkü GIT değişiklikleri takip eden bir araçtır. Teknik olarak
+GIT deşikliğin ne olduğunu biliyor ama sonuç olarak kodu yazan insan
 olduğu için, insanın anlayacağı şekilde açıklamak gerekiyor nelerin değiştiğini.
 
 En hızlı şekilde commit mesajı yazmak için günlük hayatta;

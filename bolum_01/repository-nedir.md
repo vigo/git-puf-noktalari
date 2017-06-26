@@ -16,9 +16,9 @@ Eğer bilgisayarınızda GIT kuruluysa;
 
 gibi komutların çalıştığını göreceksiniz. Eğer yukarıdaki komutlar
 çalışmıyorsa, kullandığınız işletim sistemine göre; bu [link][1] yardımıyla
-git’i indirebilir ve kurabilirsiniz.
+GIT’i indirebilir ve kurabilirsiniz.
 
-Git, içinde harika bir dokümantasyon ile geliyor. Kullanacağınız komut
+GIT, içinde harika bir dokümantasyon ile geliyor. Kullanacağınız komut
 hakkında bilgi almak çok kolay:
 
     $ git help commit

@@ -6,13 +6,14 @@ Eğer komut satırından `man git` derseniz, karşınıza çıkacak olan man pag
        git - the stupid content tracker
 
 ifadesini görürsünüz. **the stupid content tracker** yani: aptal içerik
-takipçisi. Biraz ilginç değilmi? Yazılım dünyasında Microsoft’unda Apple’ına
+takipçisi. Biraz ilginç değilmi? Yazılım dünyasında Microsoft’undan Apple’ına
 Google’ına kadar neredeyse 7’den 70’e kullandığımız bir araç var ve adı: aptal
 içerik takipçisi...
 
-Git aslında, dağıtık çalışan sürüm kontrol sistemi (*DVCS*) ve kaynak kod yönetim 
-(*SCM*) aracıdır. DVCS: **D**istributed **V**ersion **C**ontrol **S**ystem, SCM: **S**ource **C**ode 
-**M**anagement anlamına gelir. Eşdeğer diğer araçlardan öne çıkan farkları ise;
+GIT aslında, dağıtık çalışan sürüm kontrol sistemi (*DVCS*) ve kaynak kod
+yönetim (*SCM*) aracıdır. DVCS: **D**istributed **V**ersion **C**ontrol
+**S**ystem, SCM: **S**ource **C**ode **M**anagement anlamına gelir. Eşdeğer
+diğer araçlardan öne çıkan farkları ise;
 
 * Herhangi bir merkez sunucuya ihtiyaç duymadan, offline olarak çalışabilmesi
 * Güvenilirlik, **commit**’lerin tekil olması [^1]
