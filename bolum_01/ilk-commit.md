@@ -18,4 +18,4 @@ değildi. Madem öyle, hiçbir dosya ile de ilişkilendirmek istemiyorum:
 Commit mesajlarını **İngilizce** yazacağım. Elimizi buna alıştırmamız lazım. Hep
 açık-kaynak projelerde çalışırken ya da ekibe Türkçe bilmeyen biri dahil
 olduğunda ya da size yabancı bir ekiple / projeyle çalıştığınızda sıkıntı
-çekmemeniz için iyi bir antreman olur :)
+çekmemeniz için iyi bir antrenman olur :)
