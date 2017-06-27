@@ -1,7 +1,7 @@
 # Patch Mode’da Ekleme: `git add -p`
 
 Belkide GIT’in yapılma sebeplerinden biri **Patching**. Linus Torvalds, Linux
-kernel’i geliştiriken, diğer katkı yapan developerlar, yaptıklarını e-posta ile 
+kernel’i geliştirirken, diğer katkı yapan developerlar, yaptıklarını e-posta ile 
 [patch formatında][1] yolluyorlarmış.
 
 Bu e-postalarla mücadele etmek, gelenleri kontrol etmek, bir tür **review**
@@ -58,7 +58,7 @@ sahip.
     +added one more new line
     Stage this hunk [y,n,q,a,d,/,e,?]?
 
-GIT, bildiği son hali ile yeni değişikliği arasını bize `diff` ile gösteriyor
+GIT, bildiği son hali ile yeni değişikliğin arasını bize `diff` ile gösteriyor
 ve soruyor. Bu **hunk**’ı yani parçayı ne yapayım?
 
 * `y` : YES, bu hunk’ı al.
@@ -79,7 +79,7 @@ Ben `a` yapıyorum ve `git status`:
     	modified:   file-info-1.txt
 
 Bu yöntem kodu tekrar gözden geçirme imkanı verdiği gibi, son dakikada
-birşeyleri düzeltme değiştirme şansı da veriyor.
+bir şeyleri düzeltme değiştirme şansı da veriyor.
 
 Bu patch modu aslında çaktırmadan `git add -i` yapıyor ve direk olarak oradaki
 patch seçeneğini açıyor. Daha fazla bilgi almak için `git help add` demek
