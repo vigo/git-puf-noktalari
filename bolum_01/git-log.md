@@ -79,7 +79,7 @@ Benim bir alias’ım var. `lg` yani `git lg` olarak çağırıyorum:
     * 6601df828690 Added: readme file
     * 7639a730f5c7 [root] Initial commit
 
-Sizde yapabilirsiniz:
+Siz de yapabilirsiniz:
 
     $ git config --global alias.lg "log --graph --decorate --oneline --all"
     $ git help lg
