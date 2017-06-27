@@ -104,7 +104,7 @@ istiyor. Eğer bunu `git rm` ile yapsaydık;
       
         deleted:    index-test.html
 
-otomatik olarak staging’e alında. Tek yapmamız gereken şey commit etmek.
+otomatik olarak staging’e alındı. Tek yapmamız gereken şey commit etmek.
 
 Silme ya da isim değiştirme işlerini kullandığınız **IDE** yerine mutlaka
 komut satırından yapmanız sizin için daha kolay GIT kullanımı pratiği
