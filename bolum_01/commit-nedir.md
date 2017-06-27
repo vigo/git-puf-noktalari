@@ -1,9 +1,9 @@
 # Commit nedir?
 
-GIT, kendi içende özel bir [GRAPH][1] yapısı kullanıyor. Bunun adı: 
+GIT, kendi içinde özel bir [GRAPH][1] yapısı kullanıyor. Bunun adı: 
 **Directed Acyclic Graph**. Bence biraz korkutucu :) Bu nedir diyen varsa 
 detayları [linkten][2] öğrenebilir. Kabaca ortada bir ağaç yapısı var.
-Ağacın kolları var dalları var. Kendi özel yapısı içinde GIT değişiklikleri
+Ağacın kolları var, dalları var. Kendi özel yapısı içinde GIT değişiklikleri
 kendi yöntemleriyle saklar.
 
 Akla gelebilecek en basit yöntem *delta-diff* yani sadece değişen şeyleri
@@ -13,7 +13,7 @@ saklamak yerine GIT komple o anın fotoğrafını çeker. Bu aslında o an’ın
 Commit yaptığınız zaman GIT, adı **commit-object** olan bir taşıyıcı saklar.
 Bu taşıyıcı içinde **stage** edilmiş içerik, commit’i yapan kişi bilgileri,
 varsa bağlı olduğu bir üst commit ya da **branch**’lerin **merge** edilmesi
-(*birleştirilmesi*) sonunda oluşmuş bir commit ise birden fazla branch branch
+(*birleştirilmesi*) sonunda oluşmuş bir commit ise birden fazla branch 
 bilgisi saklar. Bunlar aslında birer işaretçi yani **pointer**’dır.
 
 Commit, içinde hangi **tree** yapısına dahil olduğu bilgisini de saklar. İlk
