@@ -3,9 +3,9 @@
 Bazı durumlarda dosya ya da dosyaları ya da dizinleri takip dışında tutmak
 istersiniz. Örneğin uygulamanızın `log` dosyaları, ya da kullandığınız text
 editörü ile ilgili sadece sizi ilgilendiren dosyaları izole etmek
-isteyebilrisiniz.
+isteyebilirsiniz.
 
-Belkide kullanıcı adı, şifre, ssh bilgileri ya da **SECRETS** dediğimiz
+Belki de kullanıcı adı, şifre, ssh bilgileri ya da **SECRETS** dediğimiz
 `ENVIRONMENT` değişkenlerinin ortalıkta dolaşmaması gerekebilir.
 
 İşte bu tür durumlarda GIT’e bu dosyaları kaydetmemesini, yani takip etmemesini
