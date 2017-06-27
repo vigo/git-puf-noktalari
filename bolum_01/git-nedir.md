@@ -20,7 +20,7 @@ diğer araçlardan öne çıkan farkları ise;
 * Hızlı olması [^2]
 * Az yer tutması
 * Sıfır maliyetle **branching** (*dallanma*) yapabilmek ve **merge** etmek (*birleştirebilmek*)
-* **Deployment** ve benzeri işler içinde kullanılması.
+* **Deployment** ve benzeri işler için de kullanılması.
 
 Bu güzel tool, Linux’un çekirdeğini yazan [Linus Torvalds][4] tarafından
 geliştirilmiş ve açık-kaynak şeklinde dağıtılmıştır. Tüm kaynak kod [GitHub][5]’da

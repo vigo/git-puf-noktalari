@@ -135,7 +135,7 @@ commit’i. Bu revizyonda `README.md` diye bir dosya varmıydı?
     nothing added to commit but untracked files present (use "git add" to track)
 
 Hayır, takip altında böyle bir dosya yoktu. Tekrar başladığımız yere döndük...
-Şimdi tekrar ekleme işini yapalım ve ardında da ilk commit’i yapalım:
+Şimdi tekrar ekleme işini yapalım ve ardından da ilk commit’i yapalım:
 
     $ git add README.md
     $ git commit -m 'Added: readme file'

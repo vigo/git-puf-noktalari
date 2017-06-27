@@ -26,7 +26,7 @@ programlama dillerinden alışkın olduğumuz `#` ve `;` kullanılmış:
     git config --get core.filemode
     # true
 
-`--get GRUP.DEĞİŞKEN` şeklinde okuruz. Aslın `--get` opsiyonel. Yani yazmak
+`--get GRUP.DEĞİŞKEN` şeklinde okuruz. Aslında `--get` opsiyonel. Yani yazmak
 zorunda değilsiniz:
 
     git config user.name

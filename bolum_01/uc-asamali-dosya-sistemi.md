@@ -58,7 +58,7 @@ Dosyanın içeriği?
     $ cat file-info-2.txt
     file information 2
 
-Şimdi biraz daha değişik birşey deneyeim. Tekrar aynı işlemi yapalım ama küçük
+Şimdi biraz daha değişik birşey deneyelim. Tekrar aynı işlemi yapalım ama küçük
 bir farkla:
 
     $ echo 'adding another great line' >> file-info-2.txt
@@ -95,7 +95,7 @@ Tekrar ekleyelim ki bu ikinci değişiklik de kayıt altına alınsın:
     	modified:   file-info-2.txt
 
 
-## Commited
+## Committed
 
 Veri, yerel veritabanına güvenli olarak kaydedildi. Neticede GIT kendi
 yerelinde, kendi anlayacağı şekilde bir veritabanı saklıyor. Şimdi yukarıda
