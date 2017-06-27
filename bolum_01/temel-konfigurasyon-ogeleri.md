@@ -93,7 +93,7 @@ yazıyor?
     
 
 gibi bir şema kullanabilirsiniz. Bu durumda her `git commit` dediğinizde bu
-şablon karşınıza çıkacak ve gerekli yerli doldurmanız/silmeniz yeterli
+şablon karşınıza çıkacak ve gerekli yerleri doldurmanız/silmeniz yeterli
 olacaktır.
 
 ## `help.autocorrect`
@@ -162,7 +162,7 @@ aynı `~/.gitconfig` gibi `~/.global_gitignore` gibi bir dosya oluşturup:
 
 gibi ayarlarsak, otomatik olarak belirlediğimiz dosyaları revizyon kontrol
 dışına alabiliriz. Unutmayın ki, proje bazlı `.gitignore` dosyası, repository
-içinde oluğu için, projeye katkı yapan diğer kullanıcılar tarafından da
+içinde olduğu için, projeye katkı yapan diğer kullanıcılar tarafından da
 kullanılabiliyor.
 
 Bu bakımdan, global olarak **ignore** ettiğiniz şeyler başka kimseye
@@ -195,7 +195,7 @@ yapmak yeterli.
 
 ## `status.submoduleSummary`
 
-Submodule’ler le çalıştığını zaman işinize yarayacak. `git status`
+Submodule’ler le çalıştığınız zaman işinize yarayacak. `git status`
 dediğinizde, repo altındaki submodule’lerin de durumunu görmeniz gerekebilir.
 
     git config --global status.submoduleSummary true
