@@ -27,3 +27,5 @@
 * [Bölüm 02](bolum_02/README.md)
    * [Branch’lerle Çalışmak](bolum_02/branch-ler-ile-calismak.md)
    * [Branch’leri Birleştirmek](bolum_02/branch-leri-birlestirmek.md)
+   * [Branch’lerin Çakışması: Conflict](bolum_02/branch-lerin-cakismasi-conflict.md)
+   * [Branch’leri Birleştirmek: `rebasing`](bolum_02/branch-leri-birlestirmek-rebasing.md)
