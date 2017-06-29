@@ -36,7 +36,7 @@ HEAD’iydi.
 
     Fast-forward
 
-![Teyp - Kaset kayıt cihazı](kaset-kayit.jpg "Kaset kayıt")
+![Teyp - Kaset kayıt cihazı](branch-leri-birlestirmek/kaset-kayit.jpg "Kaset kayıt")
 
 Kaset / teyp çalarları hatırlayan varsa, kaset-çalar’ın üzerinde `PLAY`,
 `STOP`, `RECORD`, `PAUSE`, `REW`, `FF` gibi düğmeler vardı... Kaseti ileri
