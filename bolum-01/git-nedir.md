@@ -1,4 +1,4 @@
-# GIT nedir?
+# GIT Nedir?
 
 Eğer komut satırından `man git` derseniz, karşınıza çıkacak olan man page’de:
 

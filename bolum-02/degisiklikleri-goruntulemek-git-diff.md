@@ -1,0 +1,1 @@
+# Değişiklikleri Görüntülemek: `git diff`

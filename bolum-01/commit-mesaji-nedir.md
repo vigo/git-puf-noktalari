@@ -1,4 +1,4 @@
-# Commit Mesajı nedir?
+# Commit Mesajı Nedir?
 
 GIT’in resmi dokümantasyon sitesinde commit’in açıklamasını yaparken, mesaj
 ile ilgili kısımda;

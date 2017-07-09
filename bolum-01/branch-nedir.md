@@ -1,4 +1,4 @@
-# Branch nedir?
+# Branch Nedir?
 
 İstediğiniz bir anda, elinizdeki kod’dan hızlıca bir ya da N tane kopya
 çıkartma işlemidir. Yerel operasyondur. Yani yaptığınız her branch, siz

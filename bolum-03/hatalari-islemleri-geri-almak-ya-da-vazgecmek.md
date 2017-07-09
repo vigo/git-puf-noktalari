@@ -1,0 +1,1 @@
+# Hataları İşlemleri Geri Almak ya da Vazgeçmek

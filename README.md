@@ -13,19 +13,20 @@ paylaşacağım.
 
 ## [Bölüm 01](bolum-01/)
 
-* [GIT nedir?](bolum-01/git-nedir.md)
+* [GIT Nedir?](bolum-01/git-nedir.md)
 * [GIT’in Hikayesi](bolum-01/gitin-kisa-hikayesi.md)
-* [Repository nedir?](bolum-01/repository-nedir.md)
-* [Branch nedir?](bolum-01/branch-nedir.md)
-* [Konfigürasyon nedir?](bolum-01/konfigurasyon-nedir.md)
+* [Repository Nedir?](bolum-01/repository-nedir.md)
+* [Branch Nedir?](bolum-01/branch-nedir.md)
+* [Konfigürasyon Nedir?](bolum-01/konfigurasyon-nedir.md)
 * [Konfigürasyon İşlemleri](bolum-01/konfigurasyon-islemleri.md)
 * [Konfigürasyon Dosyası](bolum-01/konfigurasyon-dosyasi.md)
 * [Temel Konfigürasyon Öğeleri](bolum-01/temel-konfigurasyon-ogeleri.md)
 * [Örnek Konfigürasyon Dosyası](bolum-01/ornek-konfigurasyon-dosyasi.md)
 * [Kısa Yollar: `git alias`](bolum-01/kisa-yollar-alias.md)
-* [Commit nedir?](bolum-01/commit-nedir.md)
+* [Commit Nedir?](bolum-01/commit-nedir.md)
 * [İlk Commit](bolum-01/ilk-commit.md)
-* [Commit mesajı nedir?](bolum-01/commit-mesaji-nedir.md)
+* [Commit Mesajı Nedir?](bolum-01/commit-mesaji-nedir.md)
+* [Commit’e Not Eklemek](bolum-01/commit-notu.md)
 * [İyi Bir Commit Mesajı Nasıl Olmalı?](bolum-01/iyi-bir-commit-mesaji-nasil-olmali.md)
 * [Basit Kullanım Örneği](bolum-01/basit-kullanim-ornegi.md)
 * [Üç Aşamalı Dosya Sistemi](bolum-01/uc-asamali-dosya-sistemi.md)
@@ -43,7 +44,17 @@ paylaşacağım.
 * [Branch’lerin Çakışması: Conflict](bolum-02/branch-lerin-cakismasi-conflict.md)
 * [Branch’leri Birleştirmek: `rebasing`](bolum-02/branch-leri-birlestirmek-rebasing.md)
 * [Branch Rebase Sırasında Çakışma: **Rebase Conflict**](bolum-02/branch-rebase-sirasinda-conflict.md)
+* [Değişiklikleri Görüntülemek: `git diff`](bolum-02/degisiklikleri-goruntulemek-git-diff.md)
 
+## [Bölüm 03](bolum-03/)
+
+* [Commit’leri Birleştirmek: **Interactive Rebasing**](bolum-03/commit-leri-birlestirmek-interactive-rebasing.md)
+* [Cımbızla Commit’i Almak: **Cherry Picking**](bolum-03/cimbizla-commit-i-almak-cherry-picking.md)
+* [Hataları İşlemleri Geri Almak ya da Vazgeçmek](bolum-03/hatalari-islemleri-geri-almak-ya-da-vazgecmek.md)
+* [Herşey Kayıt Altında! En az 90 gün: `git reflog`](bolum-03/hersey-kayit-altinda-git-reflog.md)
+
+
+---
 
 ## Hatırlatmalar
 

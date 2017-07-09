@@ -1,4 +1,4 @@
-# Commit nedir?
+# Commit Nedir?
 
 GIT, kendi içinde özel bir [GRAPH][1] yapısı kullanıyor. Bunun adı: 
 **Directed Acyclic Graph**. Bence biraz korkutucu :) Bu nedir diyen varsa 

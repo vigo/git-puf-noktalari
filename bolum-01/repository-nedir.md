@@ -1,4 +1,4 @@
-# Repository ya da Repo nedir?
+# Repository ya da Repo Nedir?
 
 Revizyon kontrolü altındaki dizin bir Repository’dir. Sözlük anlamına
 baktığınızda; *depo*, *dolap*, *kutu*, *kab* gibi karşılığı olduğunu

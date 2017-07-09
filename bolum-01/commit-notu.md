@@ -1,0 +1,1 @@
+# Commit’e Not Eklemek
