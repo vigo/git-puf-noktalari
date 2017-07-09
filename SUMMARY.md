@@ -1,6 +1,7 @@
 # Summary
 
 * [Giriş](README.md)
+* [Teknik Eleştiri / İnceleme](teknik-elestiri.md)
 * [Bölüm 01](bolum-01/README.md)
    * [GIT Nedir?](bolum-01/git-nedir.md)
    * [GIT’in Hikayesi](bolum-01/gitin-kisa-hikayesi.md)
