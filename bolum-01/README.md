@@ -15,7 +15,6 @@ Bu bölümde işleyeceğimiz konular:
 * [Commit Nedir?](commit-nedir.md)
 * [İlk Commit](ilk-commit.md)
 * [Commit Mesajı Nedir?](commit-mesaji-nedir.md)
-* [Commit’e Not Eklemek](commit-notu.md)
 * [İyi Bir Commit Mesajı Nasıl Olmalı?](iyi-bir-commit-mesaji-nasil-olmali.md)
 * [Basit Kullanım Örneği](basit-kullanim-ornegi.md)
 * [Üç Aşamalı Dosya Sistemi](uc-asamali-dosya-sistemi.md)

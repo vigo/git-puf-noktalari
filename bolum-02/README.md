@@ -8,3 +8,4 @@ Bu bölümde işleyeceğimiz konular:
 * [Branch’leri Birleştirmek: `rebasing`](branch-leri-birlestirmek-rebasing.md)
 * [Branch Rebase Sırasında Çakışma: **Rebase Conflict**](branch-rebase-sirasinda-conflict.md)
 * [Değişiklikleri Görüntülemek: `git diff`](degisiklikleri-goruntulemek-git-diff.md)
+* [Etiketlemek Nedir?: `git tag`](etiketlemek-nedir-git-tag.md)

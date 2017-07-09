@@ -26,7 +26,6 @@ paylaşacağım.
 * [Commit Nedir?](bolum-01/commit-nedir.md)
 * [İlk Commit](bolum-01/ilk-commit.md)
 * [Commit Mesajı Nedir?](bolum-01/commit-mesaji-nedir.md)
-* [Commit’e Not Eklemek](bolum-01/commit-notu.md)
 * [İyi Bir Commit Mesajı Nasıl Olmalı?](bolum-01/iyi-bir-commit-mesaji-nasil-olmali.md)
 * [Basit Kullanım Örneği](bolum-01/basit-kullanim-ornegi.md)
 * [Üç Aşamalı Dosya Sistemi](bolum-01/uc-asamali-dosya-sistemi.md)
@@ -45,16 +44,37 @@ paylaşacağım.
 * [Branch’leri Birleştirmek: `rebasing`](bolum-02/branch-leri-birlestirmek-rebasing.md)
 * [Branch Rebase Sırasında Çakışma: **Rebase Conflict**](bolum-02/branch-rebase-sirasinda-conflict.md)
 * [Değişiklikleri Görüntülemek: `git diff`](bolum-02/degisiklikleri-goruntulemek-git-diff.md)
+* [Etiketlemek Nedir?: `git tag`](bolum-02/etiketlemek-nedir-git-tag.md)
 
 ## [Bölüm 03](bolum-03/)
 
 * [Commit’leri Birleştirmek: **Interactive Rebasing**](bolum-03/commit-leri-birlestirmek-interactive-rebasing.md)
+* [Commit’leri Bölmek](bolum-03/commit-leri-bolmek.md)
 * [Cımbızla Commit’i Almak: **Cherry Picking**](bolum-03/cimbizla-commit-i-almak-cherry-picking.md)
 * [Hataları İşlemleri Geri Almak ya da Vazgeçmek](bolum-03/hatalari-islemleri-geri-almak-ya-da-vazgecmek.md)
+* [Commit’e Not Eklemek](bolum-03/commit-notu.md)
 * [Herşey Kayıt Altında! En az 90 gün: `git reflog`](bolum-03/hersey-kayit-altinda-git-reflog.md)
+
+## [Bölüm 04](bolum-04/)
+
+* [Remote Kavramı Nedir? Remote’larla Çalışmak](bolum-04/remote-nedir.md)
+* [Kendi GIT Reponuzu Yapın!](bolum-04/kendi-git-reponuzu-yapin.md)
+* [GitHub, BitBucket ve GitLab ile Çalışmak](bolum-04/cloud-git-sunucu-platformları.md)
+* [Repo içinde Repo: `git submodule`](bolum-04/repo-icinde-repo-git-submodule.md)
+
+## [Bölüm 05](bolum-05/)
+
+* [Commit Öncesi ya da Sonrası Otomasyonu: **GIT Hook’ları**](bolum-05/git-hook-lari.md)
+* [Bundle Nedir?](bolum-05/bundle-nedir.md)
+* [Commit’inizi İmzalayın](bolum-05/git-gpg-ile-imza.md)
+* [Revizyonları Sorgulamak](bolum-05/revizyonlari-sorgulamak.md)
+* [Bisect Nedir?](bolum-05/git-bisect-nedir.md)
+* [Yardımcı Araçlar](bolum-05/git-araclari.md)
+* [Faydalı İpuçları](bolum-05/faydali-ipculari.md)
 
 
 ---
+
 
 ## Hatırlatmalar
 
