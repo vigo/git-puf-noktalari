@@ -6,3 +6,4 @@ Bu bölümde işleyeceğimiz konular:
 * [Branch’leri Birleştirmek](branch-leri-birlestirmek.md)
 * [Branch’lerin Çakışması: Conflict](branch-lerin-cakismasi-conflict.md)
 * [Branch’leri Birleştirmek: `rebasing`](branch-leri-birlestirmek-rebasing.md)
+* [Branch Rebase Sırasında Çakışma: **Rebase Conflict**](branch-rebase-sirasinda-conflict.md)

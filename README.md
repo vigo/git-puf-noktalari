@@ -11,44 +11,49 @@ Ek olarak, zaman içinde topladığım, notlarımdan derlediğim püf noktaları
 paylaşacağım.
 
 
-Bu mini kitapta değineceğim konular;
+## [Bölüm 01](bolum-01/)
 
-1. Kısa tarihçe.
-1. Konfigürasyon, direktifler, tanımlamalar
-1. **Repository** nedir?
-1. **Commit** nedir?
-1. Commit mesajı nedir? nasıl yazılır?
-1. Commit’leri imzalamak
-1. **Staging** ne demek?
-1. **Log** nedir?
-1. **Branch** nedir?
-1. **Branch’leri merge etmek** ne anlama geliyor?
-1. Merge stratejileri neler? Hangi durumda ne tercih edilmeli?
-1. Commit’leri birleştirmek: **Rebase**-ing
-1. Herşey kayıt altında! `git reflog`
-1. Yapılan herşeyi düzeltebilir hatta geri alabiliriz: **Reset**, **Amend** ve **Revert**.
-1. **Patch** yöntemi
-1. **Bundle** ve arşivleme
-1. Herhangi bir branch’den istediğiniz bir commit’i cımbızla almak?
-1. Her geliştiricinin korkulu rüyası: **Conflict**
-1. Merge ve Rebase Conflict’leri
-1. **Tag** ve **Stash** kullanımı
-1. **Remote** kavramı, **tracking** kavramı
-1. Revizyonları, dosyaları, branch’leri ya da herşeyi karşılaştırmak: `git diff`
-1. Commit’e ek not eklemek: `git notes`
-1. **Submodule** kavramı nedir?
-1. **Commit Hook** nedir?
-1. GitHub, BitBucket ve GitLab ne işe yarar?
+* [GIT nedir?](bolum-01/git-nedir.md)
+* [GIT’in Hikayesi](bolum-01/gitin-kisa-hikayesi.md)
+* [Repository nedir?](bolum-01/repository-nedir.md)
+* [Branch nedir?](bolum-01/branch-nedir.md)
+* [Konfigürasyon nedir?](bolum-01/konfigurasyon-nedir.md)
+* [Konfigürasyon İşlemleri](bolum-01/konfigurasyon-islemleri.md)
+* [Konfigürasyon Dosyası](bolum-01/konfigurasyon-dosyasi.md)
+* [Temel Konfigürasyon Öğeleri](bolum-01/temel-konfigurasyon-ogeleri.md)
+* [Örnek Konfigürasyon Dosyası](bolum-01/ornek-konfigurasyon-dosyasi.md)
+* [Kısa Yollar: `git alias`](bolum-01/kisa-yollar-alias.md)
+* [Commit nedir?](bolum-01/commit-nedir.md)
+* [İlk Commit](bolum-01/ilk-commit.md)
+* [Commit mesajı nedir?](bolum-01/commit-mesaji-nedir.md)
+* [İyi Bir Commit Mesajı Nasıl Olmalı?](bolum-01/iyi-bir-commit-mesaji-nasil-olmali.md)
+* [Basit Kullanım Örneği](bolum-01/basit-kullanim-ornegi.md)
+* [Üç Aşamalı Dosya Sistemi](bolum-01/uc-asamali-dosya-sistemi.md)
+* [İnteraktif Ekleme: `git add -i`](bolum-01/interaktif-git-add.md)
+* [Patch Mode’da Ekleme: `git add -p`](bolum-01/patch-mod-git-add.md)
+* [Repo’nun Durumu: `git status`](bolum-01/reponun-durumu-git-status.md)
+* [Log’a Bakış](bolum-01/git-log.md)
+* [Bazı Dosyaları Takip Etmemek: `.gitignore`](bolum-01/bazi-dosyalari-takip-etmemek-gitignore.md)
+* [Dosya Silmek, Değiştirmek](bolum-01/dosya-silmek-degistirmek.md)
+
+## [Bölüm 02](bolum-02/)
+
+* [Branch’lerle Çalışmak](bolum-02/branch-ler-ile-calismak.md)
+* [Branch’leri Birleştirmek](bolum-02/branch-leri-birlestirmek.md)
+* [Branch’lerin Çakışması: Conflict](bolum-02/branch-lerin-cakismasi-conflict.md)
+* [Branch’leri Birleştirmek: `rebasing`](bolum-02/branch-leri-birlestirmek-rebasing.md)
+* [Branch Rebase Sırasında Çakışma: **Rebase Conflict**](bolum-02/branch-rebase-sirasinda-conflict.md)
+
 
 ## Hatırlatmalar
 
-1. Neticede ben yazar değilim. Yüksek ihtimal çok sayıda imla ve yazım hatası
-yapacağım. Bu kitap açık-kaynak olarak [GitHub][2]’da bulunuyor. Yardım edip
-hataları düzeltmeme yardımcı olursanız süper olur. 
-1. Biliyorum çok kızan olacak ama bu kitapta pek çok yerde yarı İngilizce yarı
-Türkçe kelimeler olacak. Çevirebildiklerimi çevireceğim. Bazı durumlarda
-çevirmek ve doğru anlamı bulmak zor oluyor. İdare edin :)
-1. [Kitabı online olarak okumak için tıklayın][1].
+- Neticede ben yazar değilim. Yüksek ihtimal çok sayıda imla ve yazım hatası
+  yapacağım. Bu kitap açık-kaynak olarak [GitHub][2]’da bulunuyor. Yardım edip
+  hataları düzeltmeme yardımcı olursanız süper olur.
+- Biliyorum çok kızan olacak ama bu kitapta pek çok yerde yarı İngilizce yarı
+  Türkçe kelimeler olacak. Çevirebildiklerimi çevireceğim. Bazı durumlarda
+  çevirmek ve doğru anlamı bulmak zor oluyor. İdare edin :)
+- [Kitabı online olarak okumak için tıklayın][1].
 
 [1]: http://vigo.gitbooks.io/git-puf-noktalari/
 [2]: https://github.com/vigo/git-puf-noktalari

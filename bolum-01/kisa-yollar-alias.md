@@ -57,4 +57,4 @@ zincirleme çağırdık. Bunu kolay yoldan yapmak için `alias` olarak ekleyebil
 
 Bu işlemden sonra `git add-untracked` dediğimizde, yeni oluşan, revizyon
 kontrol altında olmayan dosyalar otomatik olarak eklenecektir. Diğer örnek
-kısa yollar için [Örnek Konfigürasyon Dosyası](bolum_01/ornek-konfigurasyon-dosyasi.md) incelenebilir.
+kısa yollar için [Örnek Konfigürasyon Dosyası](bolum-01/ornek-konfigurasyon-dosyasi.md) incelenebilir.

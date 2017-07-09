@@ -329,4 +329,4 @@ ASCII’den grafik çizer gibi... Dallar budaklar hepsi burada :)
 
 [1]: https://www.flickr.com/photos/44337451@N00/4381924568/sizes/l/
 [2]: https://www.flickr.com/photos/44337451@N00/
-[3]: ../bolum_01/temel-konfigurasyon-ogeleri.md#core-editor
+[3]: ../bolum-01/temel-konfigurasyon-ogeleri.md#core-editor
