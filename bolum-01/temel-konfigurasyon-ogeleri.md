@@ -123,10 +123,15 @@ Unix (*Mac/Linux vb...*)
     git config --global core.autocrlf input
 
 yapması her iki kullanıcı için de sıkıntıyı ortadan kaldırıyor. Windows satır
-sonlarına `\r\n` eklerken Unix türevleri `\n` ekliyor.
+sonlarına `\r\n` eklerken Unix türevleri `\n` ekliyor. `\n` **Line feed**
+anlamındadır ve sonraki satırı ifade eder. **C**arriage **R**eturn **L**ine
+**F**eed ise ek olarak cursor’u (*imleçi*) da başa alır. Bu bakımdan `\n` yerine
+`\r\n` kullanır.
 
-Windows kullanıcısının düzenlendiği dosyayı Unix kullanıcısı açtığında bu
-sayede sorun yaşamıyor keza tersi için de geçerli.
+Konfigürasyondaki bu ayarlama özelliği sayesinde Windows kullanıcısının
+düzenlendiği dosyayı Linux/Unix kullanıcısı açtığında sorun yaşamadığı gibi
+Windows kullanıcısı da Linux/Unix kullanıcısından gelen dosyaları sıkıntısız
+açabiliyor.
 
 ## `core.whitespace`
 
