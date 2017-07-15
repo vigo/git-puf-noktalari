@@ -51,7 +51,7 @@ paylaşacağım.
 * [Commit’leri Birleştirmek: **Interactive Rebasing**](bolum-03/commit-leri-birlestirmek-interactive-rebasing.md)
 * [Commit’leri Bölmek](bolum-03/commit-leri-bolmek.md)
 * [Cımbızla Commit’i Almak: **Cherry Picking**](bolum-03/cimbizla-commit-i-almak-cherry-picking.md)
-* [Hataları İşlemleri Geri Almak ya da Vazgeçmek](bolum-03/hatalari-islemleri-geri-almak-ya-da-vazgecmek.md)
+* [Hataları İşlemleri Geri Almak ya da Vazgeçmek: `reset revert amend`](bolum-03/hatalari-islemleri-geri-almak-ya-da-vazgecmek.md)
 * [Commit’e Not Eklemek](bolum-03/commit-notu.md)
 * [Herşey Kayıt Altında! En az 90 gün: `git reflog`](bolum-03/hersey-kayit-altinda-git-reflog.md)
 
@@ -68,6 +68,7 @@ paylaşacağım.
 * [Bundle Nedir?](bolum-05/bundle-nedir.md)
 * [Commit’inizi İmzalayın](bolum-05/git-gpg-ile-imza.md)
 * [Revizyonları Sorgulamak](bolum-05/revizyonlari-sorgulamak.md)
+* [Commit’leri Sorgulamak: `blame`](bolum-05/commit-leri-sorgulamak.md)
 * [Bisect Nedir?](bolum-05/git-bisect-nedir.md)
 * [Yardımcı Araçlar](bolum-05/git-araclari.md)
 * [Faydalı İpuçları](bolum-05/faydali-ipculari.md)
