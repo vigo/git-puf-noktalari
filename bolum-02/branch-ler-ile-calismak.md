@@ -44,7 +44,7 @@ Değişen dosyalar hangileri? Bunların listesini tuttunuz mu? Son aşamadan
     * master
 
 GIT bize çalıştığımız kopyayı, branch’i söylüyor: **master branch**. Haydi
-deneme yapalım, aklımıza birşey geldi:
+deneme yapalım, aklımıza bir şey geldi:
 
     $ git branch idea # adı idea olan yeni bir branch oluştur
     $ git branch
@@ -57,7 +57,7 @@ deneme yapalım, aklımıza birşey geldi:
     $ git checkout idea
     Switched to branch 'idea'
 
-Artık bu alanda istediğimiz herşeyi deneyebiliriz. Birkaç yeni dosya ekleyelim:
+Artık bu alanda istediğimiz her şeyi deneyebiliriz. Birkaç yeni dosya ekleyelim:
 
     $ touch testing-file-ab-{1,2}.sh
     $ git add .
@@ -112,6 +112,6 @@ Bu çıktı bize şunu ifade ediyor:
     testing-file-ab-1.sh
     testing-file-ab-2.sh
 
-**idea** branch’inde denememelerimizi tamamladık ve bu iki dosyayı artık
+**idea** branch’inde denemelerimizi tamamladık ve bu iki dosyayı artık
 **master** branch’e almaya karar verdik. Bunu yapmak için yöntemlerden bir
 tanesi branch’leri birleştirmek yani **merge** etmek!
