@@ -44,7 +44,7 @@ Genelde şematik olarak gösterilirken;
     49261317ef93 <- 504714498c31 <- b72ce45cafdc (son commit)
 
 zaman çizelgesi soldan-sağa akarken commit’lerin ilişkisi tam ters şekildedir.
-Herzaman kim kimin üstü altı (*parent/child*) durumu önemlidir.
+Her zaman kim kimin üstü altı (*parent/child*) durumu önemlidir.
 
 [1]: https://en.wikipedia.org/wiki/Directed_acyclic_graph
 [2]: http://eagain.net/articles/git-for-computer-scientists/

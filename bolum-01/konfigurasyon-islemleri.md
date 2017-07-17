@@ -8,7 +8,7 @@ silebilir, düzeltebilirsiniz. Çok daha fazla [detay için tıklayın][1].
 ### Comment Out (*Yorum*)
 
 Bu dosyada **comment out** yani programlama dillerindeki gibi yorum satırı ya
-da bazen birşeyleri denemek için anlık satırı **off** etmek için popüler
+da bazen bir şeyleri denemek için anlık satırı **off** etmek için popüler
 programlama dillerinden alışkın olduğumuz `#` ve `;` kullanılmış:
 
     # bu
@@ -74,7 +74,7 @@ göre ayar yapmak istiyordum. İşte bu durumda imdadıma `include` yetişti.
 `~/.gitlocalconfig` bu dosya her iki bilgisayarımda da bulunuyor. Ana GIT
 konfigürasyon dosyamda `user` grubunda `name` ve `email` ayarları var. Farklı
 bilgisayarlarda farklı gpg anahtarları kullandığım için (*bunun ne olduğunu
-ileride anlatcağım*) `ùser.signingkey` değeri her makine için farklı :)
+ileride anlatacağım*) `user.signingkey` değeri her makine için farklı :)
 
 Eğer bulunduğum dizin `~/Dev/Amiga/Bronx-Sources/` ise
 `~/.gitconfig-bronx-repos` konfigürasyon dosyasını kullan demek istiyorum.

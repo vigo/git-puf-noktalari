@@ -5,7 +5,7 @@
 paylaşmadıkça sadece sizde bulunur.
 
 Daha teknik bir anlatımla branch aslında içinde commit-id yazan bir
-işaretçiden başka birşey değildir.
+işaretçiden başka bir şey değildir.
 
 GIT, sıfır bir repository oluşturulduğunda, aksi belirtilmedikçe, varsayılan
 (*default*) branch olarak **master** branch’i oluşturur:

@@ -41,13 +41,13 @@ yazmak yerine ışık hızıyla;
     git commit -m 'update'
     git commit -m 'wip'
 
-gibi, aslında kavgada bile yapılmayacak hareketleri yapmışızdır. Neden? kim
+gibi, aslında kavgada bile yapılmayacak hareketleri yapmışızdır. Neden? Kim
 onca değişikliği oturup yazacak şimdi? İşte en azından bu durumları minimal
 düzeye indirmek için tavsiye edilen ilk yöntem: `git commit` ile commit
 yapmak, `git commit -m 'MESAJ'` kullanmamak!
 
 Bu yöntemle karşımıza `git config core.editor` ile belirlenmiş text editörü
-çıkar ve ferah fezah mesaj yazacak bir alanla karşı karşıya kalırız. Böyle bir 
+çıkar ve ferah ferah mesaj yazacak bir alanla karşı karşıya kalırız. Böyle bir 
 durumda otomatikleştirilmiş 
 [şablon mesaj](temel-konfigurasyon-ogeleri.md#commit-template) çok işimize 
 yarayabilir.

@@ -44,7 +44,7 @@ dosyasını takipten çıkarmamız için bize;
 
     (use "git add/rm <file>..." to update what will be committed)
 
-bile dedi... Şimdi biz bu değişkliği kayıt altına alalım, yani stage edelim:
+bile dedi... Şimdi biz bu değişikliği kayıt altına alalım, yani stage edelim:
 
     $ git add .
     $ git status
