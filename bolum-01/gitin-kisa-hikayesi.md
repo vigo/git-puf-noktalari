@@ -1,6 +1,6 @@
 ## GIT’in Hikayesi
 
-Linus Torvalds, 2002 yılında, kernel’i geliştirirken [BitKeeper][1] adlı
+[Linus Torvalds][0], 2002 yılında, kernel’i geliştirirken [BitKeeper][1] adlı
 revizyon kontrol sistemini kullanıyor. 2005 yılında Linux kernel geliştirici
 topluluğu ile BitKeeper arasında bir sıkıntı oluyor. BitKeeper’ın ücretsiz
 kullanım lisansı iptal oluyor ve [Linus’un sigorta bu noktada atıyor][2].
@@ -21,6 +21,7 @@ altında tutan, o dizindeki tüm dosyaların (*eğer izole edilmemişse*)
 versiyonlarını yani dosyalardaki değişikliklerin tarihçesini, bu kendi şahsına
 özel veritabanı mekanizması içinde saklar.
 
+[0]: https://en.wikipedia.org/wiki/Linus_Torvalds
 [1]: http://www.bitkeeper.com/
 [2]: https://git-scm.com/book/en/v2/Getting-Started-A-Short-History-of-Git
 [3]: https://www.safaribooksonline.com/library/view/git-under-the/9780134133928/

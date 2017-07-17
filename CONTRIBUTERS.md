@@ -7,3 +7,4 @@
 ## Edit & Typo Fixes
 
 - [Pınar Tekir Doğan](https://github.com/pnrtkr)
+- [Ekrem Candemir](https://github.com/EkremC)

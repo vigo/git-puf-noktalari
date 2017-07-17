@@ -6,7 +6,7 @@ Eğer komut satırından `man git` derseniz, karşınıza çıkacak olan man pag
        git - the stupid content tracker
 
 ifadesini görürsünüz. **the stupid content tracker** yani: aptal içerik
-takipçisi. Biraz ilginç değilmi? Yazılım dünyasında Microsoft’undan Apple’ına
+takipçisi. Biraz ilginç değil mi? Yazılım dünyasında Microsoft’undan Apple’ına
 Google’ına kadar neredeyse 7’den 70’e kullandığımız bir araç var ve adı: aptal
 içerik takipçisi...
 

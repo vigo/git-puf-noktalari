@@ -56,7 +56,7 @@ yaptı. Gayet temiz bir operasyon oldu.
     2 files changed, 0 insertions(+), 0 deletions(-)
 
 Zaten hangi dosyalar olduğunu da biliyorduk. Aynen tahmin ettiğimiz ve
-istediğimiz gibi oldu herşey. Son durum nedir?
+istediğimiz gibi oldu her şey. Son durum nedir?
 
     $ git log --graph --decorate --oneline --all
     

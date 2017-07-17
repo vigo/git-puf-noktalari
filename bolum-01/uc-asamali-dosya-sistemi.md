@@ -58,7 +58,7 @@ Dosyanın içeriği?
     $ cat file-info-2.txt
     file information 2
 
-Şimdi biraz daha değişik birşey deneyelim. Tekrar aynı işlemi yapalım ama küçük
+Şimdi biraz daha değişik bir şey deneyelim. Tekrar aynı işlemi yapalım ama küçük
 bir farkla:
 
     $ echo 'adding another great line' >> file-info-2.txt

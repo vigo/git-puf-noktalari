@@ -88,7 +88,7 @@ en son commit’i işaret eder.
     * 7639a730f5c7 (HEAD -> master) [root] Initial commit
 
 `HEAD`’in **master** branch’de commit id’si **7639a730f5c7** olanı işaret
-ettiğini görürsünüz. Haydi yeni birşey daha...
+ettiğini görürsünüz. Haydi yeni bir şey daha...
 
 ---
 
@@ -121,7 +121,7 @@ Tekrar örneğe dönelim. GIT bize bilgi verdi ya, eğer istersek `git reset`
 yaparız. İleriki bölümlerde daha detaylı değineceğim ama şimdi yeri gelmişken
 hızlıca açıklamaya çalışayım. `git reset REVİZYON DOSYA` kullanım
 şekillerinden biridir. `HEAD` neyi işaret ediyordu? **7639a730f5c7** numaralı
-commit’i. Bu revizyonda `README.md` diye bir dosya varmıydı?
+commit’i. Bu revizyonda `README.md` diye bir dosya var mıydı?
 
     $ git reset HEAD README.md
     $ git status
@@ -155,7 +155,7 @@ Peki şimdi durum ne?
     On branch master
     nothing to commit, working tree clean
 
-**master** branch’deyiz, herşey yolunda!. `git add` kullanırken;
+**master** branch’deyiz, her şey yolunda!. `git add` kullanırken;
 
     # git add <DOSYA>
     $ git add README.md

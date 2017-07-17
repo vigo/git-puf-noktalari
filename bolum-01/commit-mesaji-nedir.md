@@ -41,7 +41,7 @@ yazmak yerine ışık hızıyla;
     git commit -m 'update'
     git commit -m 'wip'
 
-gibi, aslında kavgada bile yapılmayacak hareketleri yapmışızdır. Neden? kim
+gibi, aslında kavgada bile yapılmayacak hareketleri yapmışızdır. Neden? Kim
 onca değişikliği oturup yazacak şimdi? İşte en azından bu durumları minimal
 düzeye indirmek için tavsiye edilen ilk yöntem: `git commit` ile commit
 yapmak, `git commit -m 'MESAJ'` kullanmamak!

@@ -4,7 +4,7 @@ Aynı dosyalar üzerinde çalışınca **conflict** yanı çakışma yaşamak
 kaçınılmazdır. Duruma göre bu çakışmalar çok can sıkıcı olabilir. Bazen kabus
 haline bile dönüşebilir. Halk arasında **conflict yemek** olarak da bilinir.
 
-GIT sağolsun çözüm yöntemlerini öğrenip (*daha doğrusu kaydedip*) benzer
+GIT sağ olsun çözüm yöntemlerini öğrenip (*daha doğrusu kaydedip*) benzer
 çakışma olduğu zaman otomatik olarak çözebiliyor. Bunun için konfigürasyon
 ayarı yapmak gerekiyor:
 
@@ -136,12 +136,12 @@ Bu iki commit arasındaki fark ne?
      }
     \ No newline at end of file
 
-Birinde olan diğerinde yok ya da diğerinde tamamen başka birşey var. Biz
-master branch’deyi ve `git merge feature` dediğimiz an conflict yiyeceğimiz ap
+Birinde olan diğerinde yok ya da diğerinde tamamen başka bir şey var. Biz
+master branch’deyiz ve `git merge feature` dediğimiz an conflict yiyeceğimiz ap
 açık ortada. Karşımızdaki seçenekler:
 
 1. Kodu yazan biz olduğumuz için ne olması gerektiğini biliyoruz, elle gereken
-düzeltmeleri yapacağız
+düzeltmeleri yapacağız.
 1. Doğru olan kısım **master** branch’deki kısım, esas olan o!
 1. Doğru olan kısım **feature** branch’deki kısım, esas olan o!
 1. Amaaaan, bana ne ya, vazgeçiyorum! kim merge ederse etsin! :)
@@ -178,13 +178,13 @@ Durum ne?
     	both modified:   index.html
 
 `public/css/application.css` bunda sıkıntı yok. `both modified` ne demek?
-Kelime anlamı olarak **herikisi de değişti** gibi birşey çıkıyor. Burada bahsi
+Kelime anlamı olarak **herikisi de değişti** gibi bir şey çıkıyor. Burada bahsi
 geçenler kim? Az önce karşımızdaki seçeneklerden bahsetmiştim. Doğru olan
 kısım **master** ya da **feature**...
 
 GIT, birleştirmek istediğimiz branch’i **ONLARIN** yani **theirs**, içinde
 bulunduğumuz branch’i de **BİZİM** yani **ours** olarak sınıflandırıyor.
-Birşeyin `both modified` olması demek, hem bizim tarafın, hem de onların
+Bir şeyin `both modified` olması demek, hem bizim tarafın, hem de onların
 tarafın modifiye olması demek.
 
 Şimdi son seçenek olan: **Bana ne! vazgeçtim** i yapalım. master branch için
@@ -283,7 +283,7 @@ ve;
 
 `checkout` sadece branch’ler arası geçiş dışında da başka fonksiyonları olan
 bir komut. `git reset` konusunda değineceğim ama hızlıca; 
-`git checkout -- DOSYA` aslında `git status` komutundan aşina olduğumuz birşey:
+`git checkout -- DOSYA` aslında `git status` komutundan aşina olduğumuz bir şey:
 
     Changes not staged for commit:
       (use "git checkout -- <file>..." to discard changes in working directory)
@@ -292,7 +292,7 @@ derki: *to discard changes in working directory* yani, çalıştığınız
 yerde/dizinde/branch’de, yaptığınız değişiklikleri çöpe atmak için: 
 `git checkout -- <file>...` kullanın!
 
-Bu mini notdan sonra ari en azından **2017**’yi ekleyeyim:
+Bu mini nottan sonra ari en azından **2017**’yi ekleyeyim:
 
     $ git add index.html
     $ git status
