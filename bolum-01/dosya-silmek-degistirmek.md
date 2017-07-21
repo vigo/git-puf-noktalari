@@ -18,7 +18,7 @@ revizyon kontrolü altında değilse GIT size uyarı verir:
     
     fatal: not under version control, source=file1, destination=file_new_1
 
-Dosya track ediliyor, unuttunuz ve `mv` işlemini GIT üzerinden değilde,
+Dosya track ediliyor, unuttunuz ve `mv` işlemini GIT üzerinden değil de,
 işletim sistemi üzerinden yaptınız.
 
     $ mv app.js application.js

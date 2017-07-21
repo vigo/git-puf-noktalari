@@ -141,13 +141,13 @@ yapalım:
 
 ## Öncelik Sırası
 
-Öncelik önemlidir. Herşey öncelik sırasına göre işlenir.
+Öncelik önemlidir. Her şey öncelik sırasına göre işlenir.
 
 1. `core.excludesfile` konfigürasyonunda tanımlı olanlar
 2. Repo’nun root’undaki `.gitignore`
 3. Alt dizinlerdeki `.gitignore`’lar
 
-Diyelimki `log/` dizini var. Tüm log üreten servisler buraya yazıyor.
+Diyelim ki `log/` dizini var. Tüm log üreten servisler buraya yazıyor.
 [Nginx](https://nginx.org/en/) buraya `access.nginx` şeklinde yazıyor,
 [Gunicorn](http://gunicorn.org/) ise `gunicorn.log` şeklinde yazıyor. Biz,
 sadece `*.log` yaparak gunicorn’u izole edebiliriz:
@@ -161,7 +161,7 @@ sadece `*.log` yaparak gunicorn’u izole edebiliriz:
     no-more-php-files/demo.php
     sub-folder/demo.xyz
 
-Peki, bir durum oldu, başka bir servis daha kullanmaya başladık ve o servisde
+Peki, bir durum oldu, başka bir servis daha kullanmaya başladık ve o servis de
 `foo.log` şeklinde log üretiyor ve senaryo bu ya, bunu konfigüre edemiyoruz.
 Hatta bu dosyayı da takip etmek istiyoruz yani izole etmek **istemiyoruz!**
 Yapmamız gereken `log/.gitignore` dosyasına bir satır daha eklemek:
@@ -190,7 +190,7 @@ Yapmamız gereken `log/.gitignore` dosyasına bir satır daha eklemek:
 
 
 Gördüğünüz gibi `log/foo.log` artık track edilmeye hazır durumda.
-`log/.gitignore` dosyasındakı sıralama çok önemli:
+`log/.gitignore` dosyasındaki sıralama çok önemli:
 
     *.log
     !foo.log
