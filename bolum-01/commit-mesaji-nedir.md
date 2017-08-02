@@ -47,7 +47,7 @@ düzeye indirmek için tavsiye edilen ilk yöntem: `git commit` ile commit
 yapmak, `git commit -m 'MESAJ'` kullanmamak!
 
 Bu yöntemle karşımıza `git config core.editor` ile belirlenmiş text editörü
-çıkar ve ferah ferah mesaj yazacak bir alanla karşı karşıya kalırız. Böyle bir 
+çıkar ve ferah fezah mesaj yazacak bir alanla karşı karşıya kalırız. Böyle bir 
 durumda otomatikleştirilmiş 
 [şablon mesaj](temel-konfigurasyon-ogeleri.md#commit-template) çok işimize 
 yarayabilir.
