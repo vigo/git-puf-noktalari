@@ -178,7 +178,7 @@ Durum ne?
     	both modified:   index.html
 
 `public/css/application.css` bunda sıkıntı yok. `both modified` ne demek?
-Kelime anlamı olarak **herikisi de değişti** gibi bir şey çıkıyor. Burada bahsi
+Kelime anlamı olarak **her ikisi de değişti** gibi bir şey çıkıyor. Burada bahsi
 geçenler kim? Az önce karşımızdaki seçeneklerden bahsetmiştim. Doğru olan
 kısım **master** ya da **feature**...
 
@@ -194,7 +194,7 @@ tarafın modifiye olması demek.
     HEAD is now at 8f9bb3474c79 added: 2017 text to heading1 and some other fixes
 
 Her commit, aslında zamanın fotoğrafını çekmek değil miydi? Şimdi o an’a geri
-döndük. Özellikle `--hard` kullandık ki geride birşey kalmasın. `git reset`
+döndük. Özellikle `--hard` kullandık ki geride bir şey kalmasın. `git reset`
 konusunu ileride göreceğiz. Şimdi tekrar merge edip conflict’e geri dönelim:
 
     $ git merge feature
