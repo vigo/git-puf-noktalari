@@ -1,1 +1,1 @@
-# Herşey Kayıt Altında! En az 90 gün: `git reflog`
+# Her şey Kayıt Altında! En az 90 gün: `git reflog`

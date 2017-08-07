@@ -99,7 +99,7 @@ Bir tane yeni dosya ekleyelim:
     * 1304ac22cd97 Example commit
     * 258f67c2e2cd [root] Initial commit
 
-Bu sırada aklımıza birşey geldi, hemen master branch’e dönüp o unuttuğumuz işi
+Bu sırada aklımıza bir şey geldi, hemen master branch’e dönüp o unuttuğumuz işi
 yapalım:
 
     $ git checkout master
@@ -159,7 +159,7 @@ branch’e aktarmak... O zaman;
     # Lines starting with '#' will be ignored, and an empty message aborts
     # the commit.
 
-Otomatik üretilmiş bir commit mesajından başka birşey değil bu! GIT bize;
+Otomatik üretilmiş bir commit mesajından başka bir şey değil bu! GIT bize;
 
 > Lütfen bu birleştirmeyi açıklayan bir mesaj yaz!
 

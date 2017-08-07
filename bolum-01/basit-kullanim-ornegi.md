@@ -164,7 +164,7 @@ Peki şimdi durum ne?
     $ git add images/
     
     # git add .
-    # bulunduğun dizindeki herşeyi
+    # bulunduğun dizindeki her şeyi
     # . unix ifadesidir ve current working directory’i ifade eder.
     $ git add .
     

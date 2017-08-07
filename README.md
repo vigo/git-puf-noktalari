@@ -53,7 +53,7 @@ paylaşacağım.
 * [Cımbızla Commit’i Almak: **Cherry Picking**](bolum-03/cimbizla-commit-i-almak-cherry-picking.md)
 * [Hataları İşlemleri Geri Almak ya da Vazgeçmek: `reset revert amend`](bolum-03/hatalari-islemleri-geri-almak-ya-da-vazgecmek.md)
 * [Commit’e Not Eklemek](bolum-03/commit-notu.md)
-* [Herşey Kayıt Altında! En az 90 gün: `git reflog`](bolum-03/hersey-kayit-altinda-git-reflog.md)
+* [Her şey Kayıt Altında! En az 90 gün: `git reflog`](bolum-03/hersey-kayit-altinda-git-reflog.md)
 
 ## [Bölüm 04](bolum-04/)
 
