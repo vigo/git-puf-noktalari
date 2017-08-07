@@ -292,7 +292,7 @@ derki: *to discard changes in working directory* yani, çalıştığınız
 yerde/dizinde/branch’de, yaptığınız değişiklikleri çöpe atmak için: 
 `git checkout -- <file>...` kullanın!
 
-Bu mini nottan sonra ari en azından **2017**’yi ekleyeyim:
+Bu mini nottan sonra bari en azından **2017**’yi ekleyeyim:
 
     $ git add index.html
     $ git status
