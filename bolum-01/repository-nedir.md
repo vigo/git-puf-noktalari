@@ -1,7 +1,7 @@
 # Repository ya da Repo Nedir?
 
 Revizyon kontrolü altındaki dizin bir Repository’dir. Sözlük anlamına
-baktığınızda; *depo*, *dolap*, *kutu*, *kab* gibi karşılığı olduğunu
+baktığınızda; *depo*, *dolap*, *kutu*, *kap* gibi karşılığı olduğunu
 görürsünüz. Bence tam anlamıyla içinde dosyaların (*daha doğrusu kaynak
 kodların*) bulunduğu bir depodur Repository.
 
