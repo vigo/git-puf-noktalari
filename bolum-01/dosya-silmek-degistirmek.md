@@ -15,7 +15,7 @@ kullanılıyorsa, aynı işi;
 revizyon kontrolü altında değilse GIT size uyarı verir:
 
     $ git mv file1 file_new_1
-    
+
     fatal: not under version control, source=file1, destination=file_new_1
 
 Dosya track ediliyor, unuttunuz ve `mv` işlemini GIT üzerinden değil de,
@@ -23,17 +23,17 @@ işletim sistemi üzerinden yaptınız.
 
     $ mv app.js application.js
     $ git status
-    
+
     On branch master
     Changes not staged for commit:
       (use "git add/rm <file>..." to update what will be committed)
       (use "git checkout -- <file>..." to discard changes in working directory)
-      
+
         deleted:    app.js
-        
+
     Untracked files:
       (use "git add <file>..." to include in what will be committed)
-      
+
         application.js
 
     no changes added to commit (use "git add" and/or "git commit -a")
@@ -48,11 +48,11 @@ bile dedi... Şimdi biz bu değişikliği kayıt altına alalım, yani stage ede
 
     $ git add .
     $ git status
-    
+
     On branch master
     Changes to be committed:
       (use "git reset HEAD <file>..." to unstage)
-      
+
         renamed:    app.js -> application.js
 
 Ve GIT `app.js` dosyasını silmediğimizi sadece adını değiştirdiğimizi anladı.
@@ -63,7 +63,7 @@ GIT, default olarak **Similarity Index** diye bir değere bakar. Eğer bu
 karşılaştırma minimum **0.5** olması durumunda GIT bu iki dosyanın aynı olduğuna
 karar verir.
 
-GIT için önemli olan dosya adına değildir, **dosyanın içeriğidir**.
+GIT için önemli olan dosya adı değildir, **dosyanın içeriğidir**.
 
 ## `git rm`
 
@@ -82,14 +82,14 @@ Eğer silme işini GIT üzerinden yapmazsak;
 
     $ rm index-test.html
     $ git status
-    
+
     On branch master
     Changes not staged for commit:
       (use "git add/rm <file>..." to update what will be committed)
       (use "git checkout -- <file>..." to discard changes in working directory)
-      
+
         deleted:    index-test.html
-        
+
     no changes added to commit (use "git add" and/or "git commit -a")
 
 Silinme durumunu GIT anladı ama staging’e atmadı. Bu işlemi bizim yapmamızı
@@ -97,11 +97,11 @@ istiyor. Eğer bunu `git rm` ile yapsaydık;
 
     $ git rm index-test.html
     $ git status
-    
+
     On branch master
     Changes to be committed:
       (use "git reset HEAD <file>..." to unstage)
-      
+
         deleted:    index-test.html
 
 otomatik olarak staging’e alındı. Tek yapmamız gereken şey commit etmek.
