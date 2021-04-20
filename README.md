@@ -7,6 +7,7 @@ konulara değineceğim.
 Ek olarak, zaman içinde topladığım, notlarımdan derlediğim püf noktalarını da
 paylaşacağım.
 
+<a target="_blank" href="https://www.patreon.com/vigoo"><img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="160"></a>
 
 ## [Bölüm 01](bolum-01/)
 
