@@ -1,6 +1,3 @@
-[![Build Status](https://www.gitbook.com/button/status/book/vigo/git-puf-noktalari)](https://www.gitbook.io/book/vigo/git-puf-noktalari/activity)
-![Tamamlanma Durumu](http://progressed.io/bar/45?title=progress)
-
 # GIT Püf Noktaları
 
 Revizyon kontrol sistemi olarak son yıllara damgasını vurmuş bir araç GIT.
