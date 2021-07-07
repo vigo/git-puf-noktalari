@@ -61,4 +61,4 @@ Tamam, repo oluştu. Peki sonra ? Bence en çok kullanılan komutlardan biri ola
 branch’deyiz, commit edecek hiçbir şey yok. Bu durumda karşımızda iki tane
 yeni kavram var. `branch` ve `commit`.
 
-[1]: https://git-scm.com/
+[1]: https://git-scm.com/downloads
