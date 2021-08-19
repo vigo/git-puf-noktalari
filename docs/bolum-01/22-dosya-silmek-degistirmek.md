@@ -88,7 +88,7 @@ GIT, default olarak **Similarity Index** diye bir değere bakar. Eğer bu
 karşılaştırma minimum **0.5** olması durumunda GIT bu iki dosyanın aynı olduğuna
 karar verir.
 
-GIT için önemli olan dosya adına değildir, **dosyanın içeriğidir**.
+GIT için önemli olan dosya adı değildir, **dosyanın içeriğidir**.
 
 ## `git rm`
 

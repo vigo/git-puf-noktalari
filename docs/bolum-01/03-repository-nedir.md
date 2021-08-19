@@ -94,4 +94,4 @@ $ git config --global init.defaultBranch main
 şeklinde ayarlayabilirsiniz. Keza GitHub’da da otomatik olarak açılan her
 yeni repo `main` default branch’ine sahip oluyor.
 
-[1]: https://git-scm.com/
+[1]: https://git-scm.com/downloads

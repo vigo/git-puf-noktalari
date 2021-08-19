@@ -1,4 +1,4 @@
-# Konfigürasyon nedir?
+# Konfigürasyon Nedir?
 
 3 kapsamlı konfigürasyon bulunur:
 

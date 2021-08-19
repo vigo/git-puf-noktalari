@@ -8,7 +8,7 @@ kendi yöntemleriyle saklar.
 
 Akla gelebilecek en basit yöntem *delta-diff* yani sadece değişen şeyleri
 saklamak yerine GIT komple o anın fotoğrafını çeker. Bu aslında o an’ın
-**snapshot**’ı dır ve GIT buna **Commit** der.
+**snapshot**’ıdır ve GIT buna **Commit** der.
 
 Commit yaptığınız zaman GIT, adı **commit-object** olan bir taşıyıcı saklar.
 Bu taşıyıcı içinde **stage** edilmiş içerik, commit’i yapan kişi bilgileri,

@@ -16,11 +16,12 @@ Türkçe kelimeler olacak. Çevirebildiklerimi çevireceğim. Bazı durumlarda
 
 ---
 
-## Katkı Yapanlar
+## Katkı Yapanlar (İmla Düzeltmeler)
 
-- [Uğur “vigo” Özyılmazel](https://github.com/vigo) - Yazar
-- [Pınar Tekir Doğan](https://github.com/pnrtkr) - İmla düzeltmeler
-- [Ekrem Candemir](https://github.com/EkremC) - İmla düzeltmeler
+- [Pınar Tekir Doğan](https://github.com/pnrtkr)
+- [Ekrem Candemir](https://github.com/EkremC)
+- [Mustafa Enes Güneruz](https://github.com/menesdev)
+- [Zafer Çelenk](https://github.com/zafer06)
 
 ---
 
