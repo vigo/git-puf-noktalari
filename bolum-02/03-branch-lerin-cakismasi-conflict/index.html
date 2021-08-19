@@ -1,0 +1,1439 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Revizyon kontrol sistemi git ve gündelik işler">
+      
+      
+      
+        <meta name="author" content="Uğur vigo Özyılmazel">
+      
+      
+        <link rel="canonical" href="https://vigo.github.io/git-puf-noktalari/bolum-02/03-branch-lerin-cakismasi-conflict/">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.4">
+    
+    
+      
+        <title>Branch’lerin Çakışması: Conflict - Git Püf Noktaları</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.f7f47774.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.3f5d1f46.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#branchlerin-caksmas-conflict" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Git Püf Noktaları" class="md-header__button md-logo" aria-label="Git Püf Noktaları" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Git Püf Noktaları
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Branch’lerin Çakışması: Conflict
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        
+<a href="https://github.com/vigo/git-puf-noktalari/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    vigo/git-puf-noktalari
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Git Püf Noktaları" class="md-nav__button md-logo" aria-label="Git Püf Noktaları" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Git Püf Noktaları
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/vigo/git-puf-noktalari/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    vigo/git-puf-noktalari
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cover/" class="md-nav__link">
+        Kapak
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../technical-review/" class="md-nav__link">
+        Teknik İncleme
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Bölüm İndeksi
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      <label class="md-nav__link" for="__nav_4">
+        Bölüm 1 - A
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Bölüm 1 - A" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Bölüm 1 - A
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bolum-01/01-git-nedir/" class="md-nav__link">
+        GIT Nedir?
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bolum-01/02-gitin-kisa-hikayesi/" class="md-nav__link">
+        GIT’in Kısa Hikayesi
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bolum-01/03-repository-nedir/" class="md-nav__link">
+        Repository Nedir?
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bolum-01/04-branch-nedir/" class="md-nav__link">
+        Branch Nedir?
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bolum-01/05-konfigurasyon-nedir/" class="md-nav__link">
+        Konfigürasyon Nedir?
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bolum-01/06-konfigurasyon-islemleri/" class="md-nav__link">
+        Konfigürasyon İşlemleri
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bolum-01/07-konfigurasyon-dosyasi/" class="md-nav__link">
+        Konfigürasyon Dosyası
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bolum-01/08-temel-konfigurasyon-ogeleri/" class="md-nav__link">
+        Temel Konfigürasyon Öğeleri
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bolum-01/09-ornek-konfigurasyon-dosyasi/" class="md-nav__link">
+        Örnek Konfigürasyon Dosyası
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bolum-01/10-kisa-yollar-alias/" class="md-nav__link">
+        Kısa Yollar: `git alias`
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      <label class="md-nav__link" for="__nav_5">
+        Bölüm 1 - B
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Bölüm 1 - B" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Bölüm 1 - B
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bolum-01/11-commit-nedir/" class="md-nav__link">
+        Commit Nedir?
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bolum-01/12-ilk-commit/" class="md-nav__link">
+        İlk Commit
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bolum-01/13-commit-mesaji-nedir/" class="md-nav__link">
+        Commit Mesajı Nedir?
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bolum-01/14-iyi-bir-commit-mesaji-nasil-olmali/" class="md-nav__link">
+        İyi Bir Commit Mesajı Nasıl Olmalı?
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bolum-01/15-basit-kullanim-ornegi/" class="md-nav__link">
+        Basit Kullanım Örneği
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bolum-01/16-uc-asamali-dosya-sistemi/" class="md-nav__link">
+        Üç Aşamalı Dosya Sistemi
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bolum-01/17-interaktif-git-add/" class="md-nav__link">
+        İnteraktif Ekleme: `git add -i`
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bolum-01/18-patch-mod-git-add/" class="md-nav__link">
+        Patch Mode’da Ekleme: `git add -p`
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bolum-01/19-reponun-durumu-git-status/" class="md-nav__link">
+        Repo’nun Durumu: `git status`
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bolum-01/20-git-log/" class="md-nav__link">
+        Log’a Bakış
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bolum-01/21-bazi-dosyalari-takip-etmemek-gitignore/" class="md-nav__link">
+        Bazı Dosyaları Takip Etmemek: `.gitignore`
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bolum-01/22-dosya-silmek-degistirmek/" class="md-nav__link">
+        Dosya Silmek, Değiştirmek
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" checked>
+      
+      <label class="md-nav__link" for="__nav_6">
+        Bölüm 2
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Bölüm 2" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Bölüm 2
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-branch-ler-ile-calismak/" class="md-nav__link">
+        Branch’lerle Çalışmak
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-branch-leri-birlestirmek/" class="md-nav__link">
+        Branch’leri Birleştirmek
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Branch’lerin Çakışması: Conflict
+      </a>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-branch-leri-birlestirmek-rebasing/" class="md-nav__link">
+        Branch’leri Birleştirmek: `rebasing`
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-branch-rebase-sirasinda-conflict/" class="md-nav__link">
+        Branch Rebase Sırasında Çakışma: **Rebase Conflict**
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-degisiklikleri-goruntulemek-git-diff/" class="md-nav__link">
+        Değişiklikleri Görüntülemek: `git diff`
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-etiketlemek-nedir-git-tag/" class="md-nav__link">
+        Etiketlemek Nedir?: `git tag`
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
+      
+      <label class="md-nav__link" for="__nav_7">
+        Bölüm 3
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Bölüm 3" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          Bölüm 3
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bolum-03/01-commit-leri-birlestirmek-interactive-rebasing/" class="md-nav__link">
+        Commit’leri Birleştirmek: **Interactive Rebasing**
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bolum-03/02-commit-leri-bolmek/" class="md-nav__link">
+        Commit’leri Bölmek
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bolum-03/03-cimbizla-commit-i-almak-cherry-picking/" class="md-nav__link">
+        Cımbızla Commit’i Almak: **Cherry Picking**
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bolum-03/04-hatalari-islemleri-geri-almak-ya-da-vazgecmek/" class="md-nav__link">
+        Hataları İşlemleri Geri Almak ya da Vazgeçmek: `reset revert amend`
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bolum-03/05-commit-notu/" class="md-nav__link">
+        Commit’e Not Eklemek
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bolum-03/06-hersey-kayit-altinda-git-reflog/" class="md-nav__link">
+        Her şey Kayıt Altında! En az 90 gün: `git reflog`
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" >
+      
+      <label class="md-nav__link" for="__nav_8">
+        Bölüm 4
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Bölüm 4" data-md-level="1">
+        <label class="md-nav__title" for="__nav_8">
+          <span class="md-nav__icon md-icon"></span>
+          Bölüm 4
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bolum-04/01-remote-nedir/" class="md-nav__link">
+        Remote Kavramı Nedir? Remote’larla Çalışmak
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bolum-04/02-kendi-git-reponuzu-yapin/" class="md-nav__link">
+        Kendi GIT Reponuzu Yapın!
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bolum-04/03-cloud-git-sunucu-platformlar%C4%B1/" class="md-nav__link">
+        GitHub, BitBucket ve GitLab ile Çalışmak
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bolum-04/04-repo-icinde-repo-git-submodule/" class="md-nav__link">
+        Repo içinde Repo: `git submodule`
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" >
+      
+      <label class="md-nav__link" for="__nav_9">
+        Bölüm 5
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Bölüm 5" data-md-level="1">
+        <label class="md-nav__title" for="__nav_9">
+          <span class="md-nav__icon md-icon"></span>
+          Bölüm 5
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bolum-05/01-git-hook-lari/" class="md-nav__link">
+        Commit Öncesi ya da Sonrası Otomasyonu: Hook’lar
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bolum-05/02-bundle-nedir/" class="md-nav__link">
+        Bundle Nedir?
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bolum-05/03-git-gpg-ile-imza/" class="md-nav__link">
+        Commit’inizi İmzalayın
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bolum-05/04-revizyonlari-sorgulamak/" class="md-nav__link">
+        Revizyonları Sorgulamak
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bolum-05/05-commit-leri-sorgulamak/" class="md-nav__link">
+        Commit’leri Sorgulamak: `blame`
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bolum-05/06-git-bisect-nedir/" class="md-nav__link">
+        Bisect Nedir?
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bolum-05/07-git-araclari/" class="md-nav__link">
+        Yardımcı Araçlar
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bolum-05/08-faydali-ipculari/" class="md-nav__link">
+        Faydalı İpuçları
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/vigo/git-puf-noktalari/edit/master/docs/bolum-02/03-branch-lerin-cakismasi-conflict.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <h1 id="branchlerin-caksmas-conflict">Branch’lerin Çakışması: Conflict</h1>
+<p>Aynı dosyalar üzerinde çalışınca <strong>conflict</strong> yanı çakışma yaşamak
+kaçınılmazdır. Duruma göre bu çakışmalar çok can sıkıcı olabilir. Bazen kabus
+haline bile dönüşebilir. Halk arasında <strong>conflict yemek</strong> olarak da bilinir.</p>
+<p>GIT sağ olsun çözüm yöntemlerini öğrenip (<em>daha doğrusu kaydedip</em>) benzer
+çakışma olduğu zaman otomatik olarak çözebiliyor. Bunun için konfigürasyon
+ayarı yapmak gerekiyor:</p>
+<div class="highlight"><pre><span></span><code>$ git config --global rerere.enabled <span class="nb">true</span>
+</code></pre></div>
+<p><strong>rerere</strong> yi ilk gördüğümde bir Beşiktaş taraftarı olarak aklıma
+Galatasaray’ın <strong>rerere rarara</strong> tezahüratı gelmişti :) Ne demek rerere ?
+<strong>Reuse Recorded Resolution</strong> (<em>of conflicted merges</em>) yani: branch’leri merge
+ederken (<em>birleştirirken</em>) kaydedilen çözüm şeklini, aynı çakışma olduğu an
+tekrar kullan.</p>
+<p>Bir web uygulaması yapıyoruz, yeni bir feature geliştirmek istiyoruz. Uygulama
+yapısı aşağıdaki gibi:</p>
+<div class="codehilite"><pre><span></span><code>.
+├── public
+│   ├── css
+│   │   └── application.css
+│   ├── images
+│   │   └── photo.jpg
+│   └── js
+│       └── global.js
+└── index.html
+</code></pre></div>
+
+<p>Yeni feature için bir branch açıp çalışalım:</p>
+<div class="highlight"><pre><span></span><code>$ git checkout -b feature
+Switched to a new branch <span class="s1">&#39;feature&#39;</span>
+
+<span class="c1"># index.html’e eklemeler yaptık, css’e ek yaptık</span>
+$ git add .
+$ git commit -m <span class="s1">&#39;Footer information added&#39;</span>
+<span class="o">[</span>feature c5084b90ab6e<span class="o">]</span> Footer information added
+ <span class="m">2</span> files changed, <span class="m">6</span> insertions<span class="o">(</span>+<span class="o">)</span>
+</code></pre></div>
+<p><img alt="Demo site örnek site ekran görüntüsü" src="../branch-lerin-cakismasi-conflict/feature-c5084b90ab6e.png" title="Demo site" /></p>
+<div class="highlight"><pre><span></span><code>$ git log --graph --decorate --oneline --all
+
+* c5084b90ab6e <span class="o">(</span>HEAD -&gt; feature<span class="o">)</span> Footer information added
+* 60ee4fd58668 <span class="o">(</span>master<span class="o">)</span> Demo site initiated
+* fea8c5d8e385 <span class="o">[</span>root<span class="o">]</span> Initial commit
+</code></pre></div>
+<p>Şimdi tam bu esnada, bir telefon geldi ve hemen <strong>master</strong> branch’deki
+<code>index.html</code> dosyasında bir değişiklik yapmanız gerektiğini öğrendiniz. Henüz
+geliştirmekte olduğunuz şeyi de bitirmediniz... Ne lazım?</p>
+<div class="highlight"><pre><span></span><code>$ git checkout master
+
+<span class="c1"># gereken değişikliği yaptınız:</span>
+
+$ git diff head:index.html feature:index.html
+
+diff --git a/index.html b/index.html
+index d62d871da6ef..4fbafe3dfd2b <span class="m">100644</span>
+--- a/index.html
++++ b/index.html
+@@ -9,8 +9,10 @@
+     &lt;/head&gt;
+     &lt;body&gt;
+         &lt;header&gt;
+-            &lt;h1&gt;Demo Site <span class="m">2017</span>&lt;/h1&gt;
++            &lt;h1&gt;Demo Site&lt;/h1&gt;
+         &lt;/header&gt;
+-        &lt;script <span class="nv">src</span><span class="o">=</span><span class="s2">&quot;public/js/global-1.js&quot;</span>&gt;&lt;/script&gt;
++        
++        &lt;footer&gt;Address information&lt;/footer&gt;
++        &lt;script <span class="nv">src</span><span class="o">=</span><span class="s2">&quot;public/js/global.js&quot;</span>&gt;&lt;/script&gt;
+     &lt;/body&gt;
+ &lt;/html&gt;
+</code></pre></div>
+<p>Şimdi commit edelim:</p>
+<div class="highlight"><pre><span></span><code>$ git add .
+$ git commit -m <span class="s1">&#39;added: 2017 text to heading1 and some other fixes&#39;</span>
+
+<span class="o">[</span>master 8f9bb3474c79<span class="o">]</span> added: <span class="m">2017</span> text to heading1 and some other fixes
+ <span class="m">1</span> file changed, <span class="m">1</span> insertion<span class="o">(</span>+<span class="o">)</span>, <span class="m">1</span> deletion<span class="o">(</span>-<span class="o">)</span>
+</code></pre></div>
+<p>Log’da durum nasıl görünüyor ?</p>
+<div class="highlight"><pre><span></span><code>$ git log --graph --decorate --oneline --all
+
+* 8f9bb3474c79 <span class="o">(</span>HEAD -&gt; master<span class="o">)</span> added: <span class="m">2017</span> text to heading1 and some other fixes
+<span class="p">|</span> * c5084b90ab6e <span class="o">(</span>feature<span class="o">)</span> Footer information added
+<span class="p">|</span>/  
+* 60ee4fd58668 Demo site initiated
+* fea8c5d8e385 <span class="o">[</span>root<span class="o">]</span> Initial commit
+</code></pre></div>
+<p><code>60ee4fd58668</code> ID’li commit’den türeyen 2 commit var:</p>
+<ol>
+<li><code>c5084b90ab6e</code></li>
+<li><code>8f9bb3474c79</code></li>
+</ol>
+<p>Bu iki commit arasındaki fark ne?</p>
+<div class="highlight"><pre><span></span><code>$ git diff c5084b90ab6e 8f9bb3474c79 <span class="c1"># feature ile HEAD arasındaki diff bu yani</span>
+$ git diff feature HEAD              <span class="c1"># aynı şey</span>
+</code></pre></div>
+<p>çıktısı:</p>
+<div class="highlight"><pre><span></span><code><span class="gh">diff --git a/index.html b/index.html</span>
+<span class="gh">index 4fbafe3dfd2b..d62d871da6ef 100644</span>
+<span class="gd">--- a/index.html</span>
+<span class="gi">+++ b/index.html</span>
+<span class="gu">@@ -9,10 +9,8 @@</span>
+     &lt;/head&gt;
+     &lt;body&gt;
+         &lt;header&gt;
+<span class="gd">-            &lt;h1&gt;Demo Site&lt;/h1&gt;</span>
+<span class="gi">+            &lt;h1&gt;Demo Site 2017&lt;/h1&gt;</span>
+         &lt;/header&gt;
+<span class="gd">-        </span>
+<span class="gd">-        &lt;footer&gt;Address information&lt;/footer&gt;</span>
+<span class="gd">-        &lt;script src=&quot;public/js/global.js&quot;&gt;&lt;/script&gt;</span>
+<span class="gi">+        &lt;script src=&quot;public/js/global-1.js&quot;&gt;&lt;/script&gt;</span>
+     &lt;/body&gt;
+ &lt;/html&gt;
+<span class="gh">diff --git a/public/css/application.css b/public/css/application.css</span>
+<span class="gh">index e166ec262bd6..018697659236 100644</span>
+<span class="gd">--- a/public/css/application.css</span>
+<span class="gi">+++ b/public/css/application.css</span>
+<span class="gu">@@ -9,8 +9,4 @@ h1, h2, h3, h4, h5, h6 {</span>
+     color: #b65;
+     padding: 0;
+     margin: 1rem 0;
+<span class="gd">-}</span>
+<span class="gd">-</span>
+<span class="gd">-footer {</span>
+<span class="gd">-    color: #a73;</span>
+ }
+\ No newline at end of file
+</code></pre></div>
+<p>Birinde olan diğerinde yok ya da diğerinde tamamen başka bir şey var. Biz
+master branch’deyiz ve <code>git merge feature</code> dediğimiz an conflict yiyeceğimiz ap
+açık ortada. Karşımızdaki seçenekler:</p>
+<ol>
+<li>Kodu yazan biz olduğumuz için ne olması gerektiğini biliyoruz, elle gereken
+düzeltmeleri yapacağız.</li>
+<li>Doğru olan kısım <strong>master</strong> branch’deki kısım, esas olan o!</li>
+<li>Doğru olan kısım <strong>feature</strong> branch’deki kısım, esas olan o!</li>
+<li>Amaaaan, bana ne ya, vazgeçiyorum! kim merge ederse etsin! :)</li>
+</ol>
+<p>Haydi o zaman:</p>
+<div class="highlight"><pre><span></span><code>$ git merge feature
+Auto-merging index.html
+CONFLICT <span class="o">(</span>content<span class="o">)</span>: Merge conflict <span class="k">in</span> index.html
+Recorded preimage <span class="k">for</span> <span class="s1">&#39;index.html&#39;</span>
+Automatic merge failed<span class="p">;</span> fix conflicts and <span class="k">then</span> commit the result.
+</code></pre></div>
+<p>Evet, GIT, otomatik olarak <code>index.html</code>’i <strong>merge</strong> etmek istedi ama bu
+dosyada <strong>merge conflict</strong> ile karşılaştı ve olası çözüm için kayda geçti:</p>
+<div class="codehilite"><pre><span></span><code><span class="nv">Recorded</span> <span class="nv">preimage</span> <span class="k">for</span> <span class="s1">&#39;</span><span class="s">index.html</span><span class="s1">&#39;</span>
+</code></pre></div>
+
+<p>Durum ne?</p>
+<div class="highlight"><pre><span></span><code>$ git status
+
+On branch master
+You have unmerged paths.
+  <span class="o">(</span>fix conflicts and run <span class="s2">&quot;git commit&quot;</span><span class="o">)</span>
+  <span class="o">(</span>use <span class="s2">&quot;git merge --abort&quot;</span> to abort the merge<span class="o">)</span>
+
+Changes to be committed:
+
+    modified:   public/css/application.css
+
+Unmerged paths:
+  <span class="o">(</span>use <span class="s2">&quot;git add &lt;file&gt;...&quot;</span> to mark resolution<span class="o">)</span>
+
+    both modified:   index.html
+</code></pre></div>
+<p><code>public/css/application.css</code> bunda sıkıntı yok. <code>both modified</code> ne demek?
+Kelime anlamı olarak <strong>her ikisi de değişti</strong> gibi bir şey çıkıyor. Burada bahsi
+geçenler kim? Az önce karşımızdaki seçeneklerden bahsetmiştim. Doğru olan
+kısım <strong>master</strong> ya da <strong>feature</strong>...</p>
+<p>GIT, birleştirmek istediğimiz branch’i <strong>ONLARIN</strong> yani <strong>theirs</strong>, içinde
+bulunduğumuz branch’i de <strong>BİZİM</strong> yani <strong>ours</strong> olarak sınıflandırıyor.
+Bir şeyin <code>both modified</code> olması demek, hem bizim tarafın, hem de onların
+tarafın modifiye olması demek.</p>
+<p>Şimdi son seçenek olan: <strong>Bana ne! vazgeçtim</strong> i yapalım. master branch için
+(<em>şu an master branch’deyiz ya</em>) merge’den önceki son commit hangisiydi?</p>
+<div class="highlight"><pre><span></span><code>$ git reset --hard 8f9bb3474c79
+HEAD is now at 8f9bb3474c79 added: <span class="m">2017</span> text to heading1 and some other fixes
+</code></pre></div>
+<p>Her commit, aslında zamanın fotoğrafını çekmek değil miydi? Şimdi o an’a geri
+döndük. Özellikle <code>--hard</code> kullandık ki geride bir şey kalmasın. <code>git reset</code>
+konusunu ileride göreceğiz. Şimdi tekrar merge edip conflict’e geri dönelim:</p>
+<div class="highlight"><pre><span></span><code>$ git merge feature
+Auto-merging index.html
+CONFLICT <span class="o">(</span>content<span class="o">)</span>: Merge conflict <span class="k">in</span> index.html
+Recorded preimage <span class="k">for</span> <span class="s1">&#39;index.html&#39;</span>
+Automatic merge failed<span class="p">;</span> fix conflicts and <span class="k">then</span> commit the result.
+</code></pre></div>
+<p>Şu sorunlu <code>index.html</code>’e bir bakalım:</p>
+<div class="highlight"><pre><span></span><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+    <span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;en&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">http-equiv</span><span class="o">=</span><span class="s">&quot;X-UA-Compatible&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;IE=edge&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;viewport&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;width=device-width, initial-scale=1&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Demo site<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;public/css/application.css&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/css&quot;</span> <span class="p">/&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">header</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Demo Site 2017<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">header</span><span class="p">&gt;</span>
+<span class="err">&lt;&lt;&lt;&lt;&lt;&lt;</span><span class="p">&lt;</span> <span class="nt">HEAD</span>
+        <span class="err">&lt;</span><span class="na">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;public/js/global-1.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+=======
+
+        <span class="p">&lt;</span><span class="nt">footer</span><span class="p">&gt;</span>Address information<span class="p">&lt;/</span><span class="nt">footer</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;public/js/global.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; feature
+    <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>Bu dosyada dikkat edeceğimiz şeylerin başında gelen işaretle:</p>
+<ol>
+<li><code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code></li>
+<li><code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code></li>
+<li><code>=======</code></li>
+</ol>
+<p><code>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</code> diye ifade işaretlenen yer <strong>master</strong> branch’de olan fark. Yani
+<strong>BİZİM</strong> yani <code>--ours</code>. <code>&gt;&gt;&gt;&gt;&gt;&gt;&gt; feature</code> diye işaretlenen yer <strong>feature</strong>
+branch’de olan fark. Yani <strong>ONLARIN</strong> yani <code>--theirs</code>. <code>=======</code> ise ayraç.
+Üst ile alt kısmı ayırıyor.</p>
+<p>Şimdi;</p>
+<ol>
+<li>Ya doğru olanı, olması gerekeni biz bildiğimiz için kendi kafamıza göre
+gereken değişikliği yapacağız</li>
+<li>Ya doğru olan bizim taraf, onların tarafı unut diyeceğiz</li>
+<li>Ya da doğrusu onların, bizimkini çöpe at diyeceğiz</li>
+</ol>
+<p>Bu örnek süper basit ve çok rahat anlaşılıyor ne olduğu. Daha karmaşık
+kompleks projelerde bu işi çözmek için 3.parti araçlar kullanmak bile
+gerekebiliyor.</p>
+<p>Ben "esas olan onların yaptıklarıdır, ben zaten uydurdum" diyorum ve;</p>
+<div class="highlight"><pre><span></span><code>$ git checkout --theirs index.html
+<span class="c1"># yok bizimkini al: git checkout --ours index.html</span>
+$ cat index.html
+</code></pre></div>
+<p>ve;</p>
+<div class="highlight"><pre><span></span><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+    <span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;en&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">http-equiv</span><span class="o">=</span><span class="s">&quot;X-UA-Compatible&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;IE=edge&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;viewport&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;width=device-width, initial-scale=1&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Demo site<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;public/css/application.css&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/css&quot;</span> <span class="p">/&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">header</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Demo Site<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">header</span><span class="p">&gt;</span>
+
+        <span class="p">&lt;</span><span class="nt">footer</span><span class="p">&gt;</span>Address information<span class="p">&lt;/</span><span class="nt">footer</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;public/js/global.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div>
+<p><code>checkout</code> sadece branch’ler arası geçiş dışında da başka fonksiyonları olan
+bir komut. <code>git reset</code> konusunda değineceğim ama hızlıca; 
+<code>git checkout -- DOSYA</code> aslında <code>git status</code> komutundan aşina olduğumuz bir şey:</p>
+<div class="codehilite"><pre><span></span><code><span class="nv">Changes</span> <span class="nv">not</span> <span class="nv">staged</span> <span class="k">for</span> <span class="nv">commit</span>:
+  <span class="ss">(</span><span class="nv">use</span> <span class="s2">&quot;</span><span class="s">git checkout -- &lt;file&gt;...</span><span class="s2">&quot;</span> <span class="nv">to</span> <span class="nv">discard</span> <span class="nv">changes</span> <span class="nv">in</span> <span class="nv">working</span> <span class="nv">directory</span><span class="ss">)</span>
+</code></pre></div>
+
+<p>derki: <em>to discard changes in working directory</em> yani, çalıştığınız
+yerde/dizinde/branch’de, yaptığınız değişiklikleri çöpe atmak için: 
+<code>git checkout -- &lt;file&gt;...</code> kullanın!</p>
+<p>Bu mini nottan sonra bari en azından <strong>2017</strong>’yi ekleyeyim:</p>
+<div class="highlight"><pre><span></span><code>$ git add index.html
+$ git status
+
+On branch master
+All conflicts fixed but you are still merging.
+  <span class="o">(</span>use <span class="s2">&quot;git commit&quot;</span> to conclude merge<span class="o">)</span>
+
+Changes to be committed:
+
+    modified:   index.html
+    modified:   public/css/application.css
+</code></pre></div>
+<p>Artık commit yapacak kıvama geldi:</p>
+<div class="highlight"><pre><span></span><code>$ git commit -m <span class="s1">&#39;fixed: funny merge conflict&#39;</span>
+Recorded resolution <span class="k">for</span> <span class="s1">&#39;index.html&#39;</span>.
+<span class="o">[</span>master d1d1d648b034<span class="o">]</span> fixed: funny merge conflict
+</code></pre></div>
+<p>Dikkat ettiyseniz GIT hemen atladı ve bu çözümü öğrendiğini söyledi hemen. Log
+ne alemde?</p>
+<div class="highlight"><pre><span></span><code>$ git log --graph --decorate --oneline --all
+
+*   d1d1d648b034 <span class="o">(</span>HEAD -&gt; master<span class="o">)</span> fixed: funny merge conflict
+<span class="p">|</span><span class="se">\ </span> 
+<span class="p">|</span> * c5084b90ab6e <span class="o">(</span>feature<span class="o">)</span> Footer information added
+* <span class="p">|</span> 8f9bb3474c79 added: <span class="m">2017</span> text to heading1 and some other fixes
+<span class="p">|</span>/  
+* 60ee4fd58668 Demo site initiated
+* fea8c5d8e385 <span class="o">[</span>root<span class="o">]</span> Initial commit
+</code></pre></div>
+<p>Nur topu gibi bir <strong>merge bubble/commit</strong> ile işimize devam ediyoruz. Hemen
+master’daki güncellemeleri feature’a da alalım, işimiz henüz bitmedi:</p>
+<div class="highlight"><pre><span></span><code>$ git checkout feature
+Switched to branch <span class="s1">&#39;feature&#39;</span>
+
+$ git merge master
+Updating c5084b90ab6e..d1d1d648b034
+Fast-forward
+ index.html <span class="p">|</span> <span class="m">2</span> +-
+ <span class="m">1</span> file changed, <span class="m">1</span> insertion<span class="o">(</span>+<span class="o">)</span>, <span class="m">1</span> deletion<span class="o">(</span>-<span class="o">)</span>
+</code></pre></div>
+<p>Temiz bir <strong>Fast-forward</strong> oldu. Log ne durumda?</p>
+<div class="highlight"><pre><span></span><code>$ git log --graph --decorate --oneline --all
+
+*   d1d1d648b034 <span class="o">(</span>HEAD -&gt; feature, master<span class="o">)</span> fixed: funny merge conflict
+<span class="p">|</span><span class="se">\ </span> 
+<span class="p">|</span> * c5084b90ab6e Footer information added
+* <span class="p">|</span> 8f9bb3474c79 added: <span class="m">2017</span> text to heading1 and some other fixes
+<span class="p">|</span>/  
+* 60ee4fd58668 Demo site initiated
+* fea8c5d8e385 <span class="o">[</span>root<span class="o">]</span> Initial commit
+</code></pre></div>
+<p>Bulunduğumuz yer yani <code>HEAD</code>, hem <strong>master</strong>’ı hem de <strong>feature</strong>’ı işaret
+ediyor. History’nin (<em>yani log’un</em>) temiz olması için bize ne lazım ?</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../02-branch-leri-birlestirmek/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Branch’leri Birleştirmek" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Branch’leri Birleştirmek
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../04-branch-leri-birlestirmek-rebasing/" class="md-footer__link md-footer__link--next" aria-label="Next: Branch’leri Birleştirmek: `rebasing`" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Branch’leri Birleştirmek: `rebasing`
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.709b4209.min.js", "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.febc23d1.min.js"></script>
+      
+    
+  </body>
+</html>
