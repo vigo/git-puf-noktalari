@@ -1,4 +1,4 @@
-# Commit’leri Birleştirmek: **Interactive Rebasing**
+# Commit’leri Birleştirmek: Interactive Rebasing
 
 @wip
 

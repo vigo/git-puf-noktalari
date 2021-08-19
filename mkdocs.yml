@@ -54,9 +54,9 @@ nav:
       - "Değişiklikleri Görüntülemek: `git diff`": "bolum-02/06-degisiklikleri-goruntulemek-git-diff.md"
       - "Etiketlemek Nedir?: `git tag`": "bolum-02/07-etiketlemek-nedir-git-tag.md"
     - "Bölüm 3":
-      - "Commit’leri Birleştirmek: **Interactive Rebasing**": "bolum-03/01-commit-leri-birlestirmek-interactive-rebasing.md"
+      - "Commit’leri Birleştirmek: Interactive Rebasing": "bolum-03/01-commit-leri-birlestirmek-interactive-rebasing.md"
       - "Commit’leri Bölmek": "bolum-03/02-commit-leri-bolmek.md"
-      - "Cımbızla Commit’i Almak: **Cherry Picking**": "bolum-03/03-cimbizla-commit-i-almak-cherry-picking.md"
+      - "Cımbızla Commit’i Almak: Cherry Picking": "bolum-03/03-cimbizla-commit-i-almak-cherry-picking.md"
       - "Hataları İşlemleri Geri Almak ya da Vazgeçmek: `reset revert amend`": "bolum-03/04-hatalari-islemleri-geri-almak-ya-da-vazgecmek.md"
       - "Commit’e Not Eklemek": "bolum-03/05-commit-notu.md"
       - "Her şey Kayıt Altında! En az 90 gün: `git reflog`": "bolum-03/06-hersey-kayit-altinda-git-reflog.md"

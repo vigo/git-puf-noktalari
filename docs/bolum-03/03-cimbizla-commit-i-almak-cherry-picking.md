@@ -1,3 +1,3 @@
-# Cımbızla Commit’i Almak: **Cherry Picking**
+# Cımbızla Commit’i Almak: Cherry Picking
 
 @wip

@@ -40,9 +40,9 @@
 
 ## Bölüm 3 (Komple eksik)
 
-1. [Commit’leri Birleştirmek: **Interactive Rebasing**](bolum-03/01-commit-leri-birlestirmek-interactive-rebasing.md) *
+1. [Commit’leri Birleştirmek: Interactive Rebasing](bolum-03/01-commit-leri-birlestirmek-interactive-rebasing.md) *
 1. [Commit’leri Bölmek](bolum-03/02-commit-leri-bolmek.md) *
-1. [Cımbızla Commit’i Almak: **Cherry Picking**](bolum-03/03-cimbizla-commit-i-almak-cherry-picking.md) *
+1. [Cımbızla Commit’i Almak: Cherry Picking](bolum-03/03-cimbizla-commit-i-almak-cherry-picking.md) *
 1. [Hataları İşlemleri Geri Almak ya da Vazgeçmek: `reset revert amend`](bolum-03/04-hatalari-islemleri-geri-almak-ya-da-vazgecmek.md) *
 1. [Commit’e Not Eklemek](bolum-03/05-commit-notu.md) *
 1. [Her şey Kayıt Altında! En az 90 gün: `git reflog`](bolum-03/06-hersey-kayit-altinda-git-reflog.md) *
