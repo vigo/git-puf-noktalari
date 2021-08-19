@@ -1,0 +1,76 @@
+site_name: Git Püf Noktaları
+site_description: Revizyon kontrol sistemi git ve gündelik işler
+site_author: Uğur vigo Özyılmazel
+site_url: https://vigo.github.io/git-puf-noktalari/
+dev_addr: 127.0.0.1:9000
+theme:
+  name: 'material'
+repo_name: vigo/git-puf-noktalari
+repo_url: https://github.com/vigo/git-puf-noktalari
+extra_css:
+  - stylesheets/extra.css
+markdown_extensions:
+  - toc
+  - extra
+  - codehilite
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed
+nav:
+    - "Kapak": "cover.md"
+    - "Teknik İncleme": "technical-review.md"
+    - "Bölüm İndeksi": "index.md"
+    - "Bölüm 1 - A":
+      - "GIT Nedir?": "bolum-01/01-git-nedir.md"
+      - "GIT’in Kısa Hikayesi": "bolum-01/02-gitin-kisa-hikayesi.md"
+      - "Repository Nedir?": "bolum-01/03-repository-nedir.md"
+      - "Branch Nedir?": "bolum-01/04-branch-nedir.md"
+      - "Konfigürasyon Nedir?": "bolum-01/05-konfigurasyon-nedir.md"
+      - "Konfigürasyon İşlemleri": "bolum-01/06-konfigurasyon-islemleri.md"
+      - "Konfigürasyon Dosyası": "bolum-01/07-konfigurasyon-dosyasi.md"
+      - "Temel Konfigürasyon Öğeleri": "bolum-01/08-temel-konfigurasyon-ogeleri.md"
+      - "Örnek Konfigürasyon Dosyası": "bolum-01/09-ornek-konfigurasyon-dosyasi.md"
+      - "Kısa Yollar: `git alias`": "bolum-01/10-kisa-yollar-alias.md"
+    - "Bölüm 1 - B":
+      - "Commit Nedir?": "bolum-01/11-commit-nedir.md"
+      - "İlk Commit": "bolum-01/12-ilk-commit.md"
+      - "Commit Mesajı Nedir?": "bolum-01/13-commit-mesaji-nedir.md"
+      - "İyi Bir Commit Mesajı Nasıl Olmalı?": "bolum-01/14-iyi-bir-commit-mesaji-nasil-olmali.md"
+      - "Basit Kullanım Örneği": "bolum-01/15-basit-kullanim-ornegi.md"
+      - "Üç Aşamalı Dosya Sistemi": "bolum-01/16-uc-asamali-dosya-sistemi.md"
+      - "İnteraktif Ekleme: `git add -i`": "bolum-01/17-interaktif-git-add.md"
+      - "Patch Mode’da Ekleme: `git add -p`": "bolum-01/18-patch-mod-git-add.md"
+      - "Repo’nun Durumu: `git status`": "bolum-01/19-reponun-durumu-git-status.md"
+      - "Log’a Bakış": "bolum-01/20-git-log.md"
+      - "Bazı Dosyaları Takip Etmemek: `.gitignore`": "bolum-01/21-bazi-dosyalari-takip-etmemek-gitignore.md"
+      - "Dosya Silmek, Değiştirmek": "bolum-01/22-dosya-silmek-degistirmek.md"
+    - "Bölüm 2":
+      - "Branch’lerle Çalışmak": "bolum-02/01-branch-ler-ile-calismak.md"
+      - "Branch’leri Birleştirmek": "bolum-02/02-branch-leri-birlestirmek.md"
+      - "Branch’lerin Çakışması: Conflict": "bolum-02/03-branch-lerin-cakismasi-conflict.md"
+      - "Branch’leri Birleştirmek: `rebasing`": "bolum-02/04-branch-leri-birlestirmek-rebasing.md"
+      - "Branch Rebase Sırasında Çakışma: **Rebase Conflict**": "bolum-02/05-branch-rebase-sirasinda-conflict.md"
+      - "Değişiklikleri Görüntülemek: `git diff`": "bolum-02/06-degisiklikleri-goruntulemek-git-diff.md"
+      - "Etiketlemek Nedir?: `git tag`": "bolum-02/07-etiketlemek-nedir-git-tag.md"
+    - "Bölüm 3":
+      - "Commit’leri Birleştirmek: **Interactive Rebasing**": "bolum-03/01-commit-leri-birlestirmek-interactive-rebasing.md"
+      - "Commit’leri Bölmek": "bolum-03/02-commit-leri-bolmek.md"
+      - "Cımbızla Commit’i Almak: **Cherry Picking**": "bolum-03/03-cimbizla-commit-i-almak-cherry-picking.md"
+      - "Hataları İşlemleri Geri Almak ya da Vazgeçmek: `reset revert amend`": "bolum-03/04-hatalari-islemleri-geri-almak-ya-da-vazgecmek.md"
+      - "Commit’e Not Eklemek": "bolum-03/05-commit-notu.md"
+      - "Her şey Kayıt Altında! En az 90 gün: `git reflog`": "bolum-03/06-hersey-kayit-altinda-git-reflog.md"
+    - "Bölüm 4":
+      - "Remote Kavramı Nedir? Remote’larla Çalışmak": "bolum-04/01-remote-nedir.md"
+      - "Kendi GIT Reponuzu Yapın!": "bolum-04/02-kendi-git-reponuzu-yapin.md"
+      - "GitHub, BitBucket ve GitLab ile Çalışmak": "bolum-04/03-cloud-git-sunucu-platformları.md"
+      - "Repo içinde Repo: `git submodule`": "bolum-04/04-repo-icinde-repo-git-submodule.md"
+    - "Bölüm 5":
+      - "Commit Öncesi ya da Sonrası Otomasyonu: Hook’lar": "bolum-05/01-git-hook-lari.md"
+      - "Bundle Nedir?": "bolum-05/02-bundle-nedir.md"
+      - "Commit’inizi İmzalayın": "bolum-05/03-git-gpg-ile-imza.md"
+      - "Revizyonları Sorgulamak": "bolum-05/04-revizyonlari-sorgulamak.md"
+      - "Commit’leri Sorgulamak: `blame`": "bolum-05/05-commit-leri-sorgulamak.md"
+      - "Bisect Nedir?": "bolum-05/06-git-bisect-nedir.md"
+      - "Yardımcı Araçlar": "bolum-05/07-git-araclari.md"
+      - "Faydalı İpuçları": "bolum-05/08-faydali-ipculari.md"

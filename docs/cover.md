@@ -1,0 +1,1 @@
+![Kitabın kapağı](cover.jpg "Git Püf Noktaları")
