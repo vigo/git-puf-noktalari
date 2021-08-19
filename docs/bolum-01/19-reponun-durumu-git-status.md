@@ -41,7 +41,7 @@ Eğer exclude edilmiş, yani tanımlanan dosyalar, dizinler, ya da dosya
 türlerini GIT takibe almasın demişsek, varsa bu tür dosyalar, status içinde
 bunları da göster demektir.
 
-[Dosyaları nasıl takip dışında bırakırız?](bazi-dosyalari-takip-etmemek-gitignore.md)
+[Dosyaları nasıl takip dışında bırakırız?](21-bazi-dosyalari-takip-etmemek-gitignore.md)
 
 ## `git status --untracked-files`
 
