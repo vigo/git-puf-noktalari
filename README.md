@@ -18,9 +18,11 @@ Türkçe kelimeler olacak. Çevirebildiklerimi çevireceğim. Bazı durumlarda
 
 ## Katkı Yapanlar (İmla Düzeltmeler)
 
-- [Pınar Tekir Doğan](https://github.com/pnrtkr)
+- [Anıl İyidoğan](https://github.com/aniliyidogan)
 - [Ekrem Candemir](https://github.com/EkremC)
+- [Kağan Utku Kılıçlı](https://github.com/kaganuk)
 - [Mustafa Enes Güneruz](https://github.com/menesdev)
+- [Pınar Tekir Doğan](https://github.com/pnrtkr)
 - [Zafer Çelenk](https://github.com/zafer06)
 
 ---
