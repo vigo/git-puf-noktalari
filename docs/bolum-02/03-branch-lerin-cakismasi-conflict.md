@@ -63,11 +63,17 @@ geliştirmekte olduğunuz şeyi de bitirmediniz... Ne lazım?
 
 ```bash
 $ git checkout master
+```
 
-# gereken değişikliği yaptınız:
+gereken değişikliği yaptınız:
 
+```bash
 $ git diff head:index.html feature:index.html
+```
 
+ve;
+
+```diff
 diff --git a/index.html b/index.html
 index d62d871da6ef..4fbafe3dfd2b 100644
 --- a/index.html
@@ -86,7 +92,6 @@ index d62d871da6ef..4fbafe3dfd2b 100644
      </body>
  </html>
 ```
-
 
 Şimdi commit edelim:
 
