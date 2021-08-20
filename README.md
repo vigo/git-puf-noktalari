@@ -29,9 +29,13 @@ Türkçe kelimeler olacak. Çevirebildiklerimi çevireceğim. Bazı durumlarda
 
 ---
 
-## Lisans
+## Katkı Yapın
 
-Bu proje MIT lisansı kullanmaktadır.
+1. `fork` (https://github.com/vigo/git-puf-noktalari/fork)
+1. Yeni bir `branch` açın (`git checkout -b duzeltmeler`)
+1. `commit` edin (`git commit -am 'imla hataları'`)
+1. `branch`’inizi `push` edin (`git push origin duzeltmeler`)
+1. ve **Pull Request** açın!
 
 ---
 
@@ -44,6 +48,15 @@ Bu proje MIT lisansı kullanmaktadır.
 
 ---
 
+## Lisans
+
+Bu proje MIT lisansı kullanmaktadır.
+
+Bu proje, işbirliği için güvenli ve davetkar bir alan olarak tasarlanmıştır ve
+katkıda bulunanların [davranış kurallarına][coc] uymaları beklenir.
+
+---
+
 ## Rakefile
 
 ```bash
@@ -53,3 +66,7 @@ rake build   # Build docs
 rake deploy  # Deploy to github
 rake serve   # Run docs server
 ```
+
+---
+
+[coc]: https://github.com/vigo/git-puf-noktalari/blob/main/CODE_OF_CONDUCT.md
