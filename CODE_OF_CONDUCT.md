@@ -1,76 +1,123 @@
-# Contributor Covenant Code of Conduct
+# Katkıcı Ahdi Topluluk Sözleşmesi
 
-## Our Pledge
+## Taahhüdümüz
 
-In the interest of fostering an open and welcoming environment, we as
-contributors and maintainers pledge to making participation in our project and
-our community a harassment-free experience for everyone, regardless of age, body
-size, disability, ethnicity, sex characteristics, gender identity and expression,
-level of experience, education, socio-economic status, nationality, personal
-appearance, race, religion, or sexual identity and orientation.
+Herkes için açık ve erişilebilir bir ortam sağlamak amacıyla üyeler, katkıda
+bulunanlar ve liderler olarak biz katkı vermeyi yaş, beden ölçüsü, görünür
+veya görünmez sakatlık, etnik köken, cinsiyet özellikleri, cinsiyet kimlik ve
+ifadesi, tecrübe seviyesi, eğitim, sosyo-ekonomik durum, milliyet, kişisel
+görünüm, ırk, din veya cinsel kimlik ve yönelim ayrımı gözetmeden keyifli ve
+güvenli bir tecrübe haline getirmeyi taahhüt ediyoruz.
 
-## Our Standards
+Açık, misafirperver, çeşitliliği destekleyen, kapsayıcı ve sağlıklı bir
+topluluk oluşturacak şekilde hareket etmeyi ve etkileşim kurmayı taahhüt
+ediyoruz.
 
-Examples of behavior that contributes to creating a positive environment
-include:
+## Standartlarımız
 
-* Using welcoming and inclusive language
-* Being respectful of differing viewpoints and experiences
-* Gracefully accepting constructive criticism
-* Focusing on what is best for the community
-* Showing empathy towards other community members
+Bizim için olumlu bir topluluk ortamına katkıda bulunan davranış örnekleri şunları içerir:
 
-Examples of unacceptable behavior by participants include:
+- Diğer insanlara karşı empati ve nezaket göstermek
+- Farklı görüşlere, bakış açılarına ve deneyimlere saygılı olmak
+- Yapıcı geri bildirim verme ve geri bildirimi zarifçe kabul etme
+- Sorumluluğu kabul etmek ve hatalarımızdan etkilenenlerden özür dilemek, ve bu deneyimlerden öğrenme
+- Sadece kendimiz için değil, topluluk için en iyi olana odaklanmak
 
-* The use of sexualized language or imagery and unwelcome sexual attention or
- advances
-* Trolling, insulting/derogatory comments, and personal or political attacks
-* Public or private harassment
-* Publishing others' private information, such as a physical or electronic
- address, without explicit permission
-* Other conduct which could reasonably be considered inappropriate in a
- professional setting
+Kabul edilemez davranış örnekleri şunları içerir:
 
-## Our Responsibilities
+- Cinselleştirilmiş dil veya imgelerin ve cinsel ilgi veya her türlü cinsel avantajın kullanımı
+- Trolleme, hakaret veya aşağılayıcı yorumlar ve kişisel veya politik saldırılar
+- Açıktan veya gizli taciz
+- Açık izinleri olmadan fiziksel adresleri veya e-posta gibi başkalarının özel bilgilerini yayınlama
+- Profesyonel bir ortamda makul sayılmayabilecek diğer davranışlar
 
-Project maintainers are responsible for clarifying the standards of acceptable
-behavior and are expected to take appropriate and fair corrective action in
-response to any instances of unacceptable behavior.
+## Uygulama Sorumlulukları
 
-Project maintainers have the right and responsibility to remove, edit, or
-reject comments, commits, code, wiki edits, issues, and other contributions
-that are not aligned to this Code of Conduct, or to ban temporarily or
-permanently any contributor for other behaviors that they deem inappropriate,
-threatening, offensive, or harmful.
+Topluluk liderleri, kabul edilebilir davranış standartlarımızı açıklamaktan ve
+uygulamaktan sorumludur ve uygunsuz, tehdit edici, saldırgan veya zararlı
+gördükleri davranışlara karşılık olarak uygun ve adil düzeltici önlemler
+alacaktır.
 
-## Scope
+Topluluk liderleri, bu Davranış Kurallarına uymayan yorumları, commit'leri,
+kodları, wiki düzenlemelerini, sorun kayıtlarını ve diğer katkıları kaldırma,
+düzenleme veya reddetme hakkına ve sorumluluğuna sahiptir ve gerektiğinde
+denetleme kararlarının nedenlerini bildirir.
 
-This Code of Conduct applies both within project spaces and in public spaces
-when an individual is representing the project or its community. Examples of
-representing a project or community include using an official project e-mail
-address, posting via an official social media account, or acting as an appointed
-representative at an online or offline event. Representation of a project may be
-further defined and clarified by project maintainers.
+## Kapsam
 
-## Enforcement
+Bu Davranış Kuralları tüm topluluk alanlarında geçerlidir ve ayrıca bir
+kişinin topluluğu kamuya açık alanlarda resmi olarak temsil ettiğinde de
+geçerlidir. Topluluğumuzu temsil etmenin örnekleri arasında resmi bir e-posta
+adresi kullanmak, resmi bir sosyal medya hesabı aracılığıyla yayınlamak veya
+çevrimiçi veya çevrimdışı bir etkinlikte atanmış bir temsilci olarak hareket
+etmek yer alır.
 
-Instances of abusive, harassing, or otherwise unacceptable behavior may be
-reported by contacting the project team at ugurozyilmazel@gmail.com. All
-complaints will be reviewed and investigated and will result in a response that
-is deemed necessary and appropriate to the circumstances. The project team is
-obligated to maintain confidentiality with regard to the reporter of an incident.
-Further details of specific enforcement policies may be posted separately.
+## Uygulama
 
-Project maintainers who do not follow or enforce the Code of Conduct in good
-faith may face temporary or permanent repercussions as determined by other
-members of the project's leadership.
+Zorbalık, taciz edici veya başka bir şekilde kabul edilemez davranış örnekleri
+ugurozyilmazel@gmail.com ile uygulamadan sorumlu topluluk liderlerine
+bildirilebilir. Tüm şikayetler derhal ve adil bir şekilde incelenecek ve
+araştırılacaktır.
 
-## Attribution
+Tüm topluluk liderleri, herhangi bir olayın şikayetçisinin gizliliğine ve
+güvenliğine saygı göstermekle yükümlüdür.
 
-This Code of Conduct is adapted from the [Contributor Covenant][homepage], version 1.4,
-available at https://www.contributor-covenant.org/version/1/4/code-of-conduct.html
+## Uygulama Yönergeleri
 
-[homepage]: https://www.contributor-covenant.org
+Topluluk liderleri, bu Davranış Kurallarını ihlal ettiklerini düşündükleri
+herhangi bir eylemin sonuçlarını belirlerken bu Topluluk Etki Kurallarını
+izleyeceklerdir:
 
-For answers to common questions about this code of conduct, see
-https://www.contributor-covenant.org/faq
+### 1. Düzeltme
+
+**Topluluk Etkisi**: Toplulukta profesyonel olmayan veya hoş karşılanmadığı
+kabul edilen uygunsuz dil veya diğer davranışların kullanılması.
+
+**Sonuç**: Topluluk liderlerinden kişiye ihlalin niteliği ve davranışın neden
+uygunsuz olduğuna dair açıklama sağlayan özel, yazılı bir uyarı gönderilir.
+Kişiden kamuya açık bir özür talep edilebilir.
+
+### 2. Uyarı
+
+**Topluluk Etkisi**: Tek bir veya bir dizi olayda ihlal.
+
+**Sonuç**: Davranış sürekliliği için sonuçları belirten bir uyarı. Belirli bir
+süre için Davranış Kurallarını uygulayanlarla istenmeyen etkileşim dahil,
+olaya dahil olan kişilerle etkileşim yasağı getirilir. Bu, sosyal medya gibi
+dış kanalların yanı sıra topluluk alanlarında etkileşimden uzaklaştırılmayı
+içerir. Bu şartları ihlal etmek geçici veya kalıcı bir yasaklamaya yol
+açabilir.
+
+### 3. Geçici Yasak
+
+**Topluluk Etkisi**: Sürekli uygunsuz davranış da dahil olmak üzere, topluluk
+standartlarının ciddi bir ihlali.
+
+**Sonuç**: Belirli bir süre boyunca toplulukla her türlü etkileşimden veya
+halkla iletişimden geçici olarak yasaklanma. Davranış Kurallarını
+uygulayanlarla istenmeyen etkileşim dahil, ilgili kişilerle hiçbir kamusal
+veya özel etkileşime izin verilmez. Bu şartları ihlal etmek kalıcı bir yasağa
+yol açabilir.
+
+### 4. Kalıcı Yasak
+
+**Topluluk Etkisi**: Sürekli uygunsuz davranışlar, bir bireyin taciz edilmesi
+veya bireylerin sınıflarına karşı saldırganlık veya aşağılama dahil olmak
+üzere, topluluk standartlarının ihlalinde devamlılık göstermek.
+
+**Sonuç**: Topluluk içindeki her türlü açık etkileşimden kalıcı bir yasak.
+
+## Kaynak
+
+Bu Davranış Kuralları [Katılımcı Sözleşmesinden] uyarlanmıştır, sürüm 2.0'a şu
+adresten ulaşılabilir:
+https://www.contributor-covenant.org/version/2/0/code_of_conduct.html.
+
+Topluluk Etki Yönergeleri [Mozilla'nın davranış kuralları icra merdiveninden](https://github.com/mozilla/diversity) ilham alındı.
+
+Bu davranış kuralları hakkında sık sorulan soruların yanıtları için 
+https://www.contributor-covenant.org/faq adresindeki SSS bölümüne bakın. 
+
+Çevirilere https://www.contributor-covenant.org/translations adresinden ulaşabilirsiniz.
+
+[Katılımcı Sözleşmesinden]: https://www.contributor-covenant.org
