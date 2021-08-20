@@ -6,7 +6,17 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://vigo.github.io/git-puf-noktalari/acknowledgements/</loc>
+         <lastmod>2021-08-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://vigo.github.io/git-puf-noktalari/cover/</loc>
+         <lastmod>2021-08-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://vigo.github.io/git-puf-noktalari/preface/</loc>
          <lastmod>2021-08-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
