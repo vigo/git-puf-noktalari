@@ -1114,26 +1114,26 @@ $ git commit -m <span class="s1">&#39;Footer information added&#39;</span>
 <code>index.html</code> dosyasında bir değişiklik yapmanız gerektiğini öğrendiniz. Henüz
 geliştirmekte olduğunuz şeyi de bitirmediniz... Ne lazım?</p>
 <div class="highlight"><pre><span></span><code>$ git checkout master
-
-<span class="c1"># gereken değişikliği yaptınız:</span>
-
-$ git diff head:index.html feature:index.html
-
-diff --git a/index.html b/index.html
-index d62d871da6ef..4fbafe3dfd2b <span class="m">100644</span>
---- a/index.html
-+++ b/index.html
-@@ -9,8 +9,10 @@
+</code></pre></div>
+<p>gereken değişikliği yaptınız:</p>
+<div class="highlight"><pre><span></span><code>$ git diff head:index.html feature:index.html
+</code></pre></div>
+<p>ve;</p>
+<div class="highlight"><pre><span></span><code><span class="gh">diff --git a/index.html b/index.html</span>
+<span class="gh">index d62d871da6ef..4fbafe3dfd2b 100644</span>
+<span class="gd">--- a/index.html</span>
+<span class="gi">+++ b/index.html</span>
+<span class="gu">@@ -9,8 +9,10 @@</span>
      &lt;/head&gt;
      &lt;body&gt;
          &lt;header&gt;
--            &lt;h1&gt;Demo Site <span class="m">2017</span>&lt;/h1&gt;
-+            &lt;h1&gt;Demo Site&lt;/h1&gt;
+<span class="gd">-            &lt;h1&gt;Demo Site 2017&lt;/h1&gt;</span>
+<span class="gi">+            &lt;h1&gt;Demo Site&lt;/h1&gt;</span>
          &lt;/header&gt;
--        &lt;script <span class="nv">src</span><span class="o">=</span><span class="s2">&quot;public/js/global-1.js&quot;</span>&gt;&lt;/script&gt;
-+        
-+        &lt;footer&gt;Address information&lt;/footer&gt;
-+        &lt;script <span class="nv">src</span><span class="o">=</span><span class="s2">&quot;public/js/global.js&quot;</span>&gt;&lt;/script&gt;
+<span class="gd">-        &lt;script src=&quot;public/js/global-1.js&quot;&gt;&lt;/script&gt;</span>
+<span class="gi">+        </span>
+<span class="gi">+        &lt;footer&gt;Address information&lt;/footer&gt;</span>
+<span class="gi">+        &lt;script src=&quot;public/js/global.js&quot;&gt;&lt;/script&gt;</span>
      &lt;/body&gt;
  &lt;/html&gt;
 </code></pre></div>
