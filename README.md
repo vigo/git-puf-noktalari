@@ -18,6 +18,8 @@ Türkçe kelimeler olacak. Çevirebildiklerimi çevireceğim. Bazı durumlarda
 
 ## Katkı Yapanlar (İmla Düzeltmeler)
 
+İsimler alfabetik olarak sıraya göre dizilmiştir.
+
 - [Anıl İyidoğan](https://github.com/aniliyidogan)
 - [Ekrem Candemir](https://github.com/EkremC)
 - [Kağan Utku Kılıçlı](https://github.com/kaganuk)

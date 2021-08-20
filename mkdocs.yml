@@ -19,6 +19,7 @@ markdown_extensions:
   - pymdownx.tabbed
 nav:
     - "Kapak": "cover.md"
+    - "Önsöz": "preface.md"
     - "Teknik İncleme": "technical-review.md"
     - "Bölüm İndeksi": "index.md"
     - "Bölüm 1 - A":
@@ -74,3 +75,4 @@ nav:
       - "Bisect Nedir?": "bolum-05/06-git-bisect-nedir.md"
       - "Yardımcı Araçlar": "bolum-05/07-git-araclari.md"
       - "Faydalı İpuçları": "bolum-05/08-faydali-ipculari.md"
+    - "Teşekkürler": "acknowledgements.md"
