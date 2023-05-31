@@ -1,3 +1,5 @@
+[![Documentation Status](https://readthedocs.org/projects/git-puf-noktalar/badge/?version=latest)](https://git-puf-noktalar.readthedocs.io/tr/latest/?badge=latest)
+
 # GIT Püf Noktaları
 
 https://vigo.github.io/git-puf-noktalari/
