@@ -16,6 +16,12 @@ Biliyorum çok kızan olacak ama bu kitapta pek çok yerde yarı İngilizce yar�
 Türkçe kelimeler olacak. Çevirebildiklerimi çevireceğim. Bazı durumlarda
 çevirmek ve doğru anlamı bulmak zor oluyor. İdare edin :)
 
+Kitabı web üzerinden okumak için;
+
+- https://git-puf-noktalar.readthedocs.io/tr/latest/ (pdf ve epub da var)
+- https://github.com/vigo/git-puf-noktalari
+
+
 ---
 
 ## Katkı Yapanlar (İmla Düzeltmeler)
