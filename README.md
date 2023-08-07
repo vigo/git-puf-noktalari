@@ -1,4 +1,6 @@
 [![Documentation Status](https://readthedocs.org/projects/git-puf-noktalar/badge/?version=latest)](https://git-puf-noktalar.readthedocs.io/tr/latest/?badge=latest)
+![Powered by Rake](https://img.shields.io/badge/powered_by-rake-blue?logo=ruby)
+
 
 # GIT Püf Noktaları
 
